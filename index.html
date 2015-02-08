@@ -24,21 +24,21 @@
     p {color:#759087; font-size:18px; text-align: left; font-family : 'Vollkorn'; 
 	}
 
-    .body {
+    #body {
       margin: 70px auto;
       padding: 50px;
       border-radius: 1em;
     }
-    p.dateclass {
-      float: left;
+    #date {
       text-align: right;
+      display: inline-block;
     }
-    p.postclass {
-      float: left;
+    #post {
       text-align: left;
       margin-left: auto;
       margin-right: auto;
-      width: 700px
+      width: 700px;
+      display: inline-block;
     }
     #header {
       width: 700px;
@@ -83,9 +83,9 @@
 
 <body>
 
-<div class="body">
-    <p class="dateclass">Sun 8 Feb 2015</p>
-    <p class="postclass">This domain is established to be used for illustrative examples in documents. You may use this domain in examples without prior coordination or asking for permission. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fermentum, urna a vestibulum vestibulum, nisi lorem efficitur augue, eget ultricies elit nibh eget dolor. Nam et enim dapibus, lobortis libero elementum, lacinia velit. Nulla ac purus ut neque mattis maximus. Pellentesque efficitur turpis in urna porta convallis. Vestibulum id neque ac augue ultricies aliquam eu nec nibh. Nulla lacus mauris, placerat et euismod ac, tincidunt ac orci. Morbi in interdum nibh, et viverra arcu. Cras a iaculis metus, non pellentesque libero. Curabitur ac laoreet dui, eget laoreet dui. Nullam sed sapien id erat suscipit porta sed ut neque. Phasellus ac orci velit. Mauris est risus, varius nec orci a, sodales efficitur ipsum. Integer sollicitudin tempor metus, vitae facilisis tortor luctus ut. Etiam ac lectus id odio facilisis tristique.
+<div id="body">
+    <div id="date">Sun 8 Feb 2015</p>
+    <p class="post">This domain is established to be used for illustrative examples in documents. You may use this domain in examples without prior coordination or asking for permission. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fermentum, urna a vestibulum vestibulum, nisi lorem efficitur augue, eget ultricies elit nibh eget dolor. Nam et enim dapibus, lobortis libero elementum, lacinia velit. Nulla ac purus ut neque mattis maximus. Pellentesque efficitur turpis in urna porta convallis. Vestibulum id neque ac augue ultricies aliquam eu nec nibh. Nulla lacus mauris, placerat et euismod ac, tincidunt ac orci. Morbi in interdum nibh, et viverra arcu. Cras a iaculis metus, non pellentesque libero. Curabitur ac laoreet dui, eget laoreet dui. Nullam sed sapien id erat suscipit porta sed ut neque. Phasellus ac orci velit. Mauris est risus, varius nec orci a, sodales efficitur ipsum. Integer sollicitudin tempor metus, vitae facilisis tortor luctus ut. Etiam ac lectus id odio facilisis tristique.
     </p>
   </div>
 </body>
