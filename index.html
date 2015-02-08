@@ -36,17 +36,43 @@
   	right: 25px;
   	top: 25px;
     padding: 10px;
+    background: #555;
+    background: -webkit-gradient(linear, left top, left bottom, from( #555 ), to( #111 ), color-stop( 50%, #444 ), color-stop( 50%, #333 ));
+    background: -webkit-linear-gradient(#555, #444 50%, #333 50%, #111);
+    background: -moz-linear-gradient(#555, #444 50%, #333 50%, #111);
+    background: -ms-linear-gradient(#555, #444 50%, #333 50%, #111);
+    background: -o-linear-gradient(#555, #444 50%, #333 50%, #111);
+    background: linear-gradient(#555, #444 50%, #333 50%, #111);
+    border-width: 2px 2px 2px 0;
+    border-style: solid;
+    border-color: #777 #888 #999;
+    -webkit-border-top-right-radius: 6px;
+    -moz-border-top-right-radius: 6px;
+    border-top-right-radius: 6px;
+    -webkit-border-bottom-right-radius: 6px;
+    -moz-border-bottom-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    -webkit-box-shadow: #888 7px 0 10px -5px;
+    -moz-box-shadow: #888 7px 0 10px -5px;
+    -o-box-shadow: #888 7px 0 10px -5px;
+    box-shadow: #888 7px 0 10px -5px;
 }
 #floating-social-icons li a {
     display: block;
     background-repeat: no-repeat;
     background-position: top right;
 }
+#floating-social-icons li a img {
+    -webkit-transition:  opacity .2s ease-in-out;
+    -moz-transition:  opacity .2s ease-in-out;
+    -o-transition:  opacity .2s ease-in-out;
+    transition:  opacity .2s ease-in-out;
+}
 #floating-social-icons li a:hover img {
-    opacity: 0;
+    opacity: 1;
 }
 #floating-social-icons li a:active img {
-    opacity: 1;
+    opacity: 0;
 }
 #floating-social-icons li:first-child {
     background-image: url('/images/github-icon-01.png');
