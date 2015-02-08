@@ -36,11 +36,61 @@
     	img {
       	  max-width: 64px;
     	}
-    	a:hover {
+    	&:hover {
       	  opacity: .8;
     }
   }
 }
+
+
+
+#floating-social-icons {
+	position: fixed;
+  	right: 25px;
+  	top: 25px;
+    padding: 10px;
+}
+#floating-social-icons li a {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+#floating-social-icons li a img {
+    -webkit-transition:  opacity .2s ease-in-out;
+    -moz-transition:  opacity .2s ease-in-out;
+    -o-transition:  opacity .2s ease-in-out;
+    transition:  opacity .2s ease-in-out;
+}
+#floating-social-icons li a:hover img {
+    opacity: 1;
+}
+#floating-social-icons li a:active img {
+    opacity: 0;
+}
+#floating-social-icons li:first-child {
+    background-image: url('/images/github-icon-01.png');
+}
+#floating-social-icons li:nth-child(2) {
+    background-image: url('/images/linkedin-icon-05.png');
+}
+#floating-social-icons li:nth-child(3) {
+    background-image: url('/images/email-icon-02.png');
+}
+#floating-social-icons li:nth-child(4) {
+    background-image: url('/images/gplus-icon-06.png');
+}
+#floating-social-icons li:nth-child(5) {
+    background-image: url('/images/twitter-icon-04.png');
+}
+#floating-social-icons li:nth-child(4) {
+    background-image: url('/images/facebook-icon-03.png');
+}
+#floating-social-icons li:nth-child(5) {
+    background-image: url('/images/pinterest-icon-07.png');
+}
+
+
+
   </style>
 </head>
 
