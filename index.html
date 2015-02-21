@@ -4,8 +4,8 @@
   <title>Coderica</title>
   <meta charset="UTF-8">
   <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,300italic,400italic,700italic|Vollkorn:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
-  
-  <script language="javascript" type="text/javascript">
+ 
+<script language="javascript" type="text/javascript">
   function showHide(shID) {
    if (document.getElementById(shID)) {
       if (document.getElementById(shID+'-show').style.display != 'none') {
@@ -18,165 +18,181 @@
         }
       }
     }
-  </script>
+</script>
 
-  <style type="text/css">
+<style type="text/css">
     body {
-      background-color: #bae5d8;
-      bottom-margin: 500;
-      padding: 0;
-      font-family: 'Ubuntu', sans-serif;
-      font-family: 'Vollkorn', serif;
+        background-color: #bae5d8;
+        bottom-margin: 500;
+        padding: 0;
+        font-family: 'Ubuntu', sans-serif;
+        font-family: 'Vollkorn', serif;
     }
     h1 { 
-      font-family: 'Ubuntu'; 
-      font-weight: 700; 
-      font-size: 75px; 
-      color: #759087; 
+        font-family: 'Ubuntu'; 
+        font-weight: 700; 
+        font-size: 75px; 
+        color: #759087;
     }
     h2 { 
-      font-family: 'Ubuntu'; 
-      font-weight: 300; 
-      font-size: 45px; 
-      color: #759087; 
+        font-family: 'Ubuntu'; 
+        font-weight: 300; 
+        font-size: 45px; 
+        color: #759087; 
     }
     h3 { 
-      font-family: 'Ubuntu'; 
-      font-weight: 400; 
-      font-size: 36px; 
-      color: #759087; 
+        font-family: 'Ubuntu'; 
+        font-weight: 400; 
+        font-size: 36px; 
+        color: #759087; 
     }
     h4 { 
-      font-family: 'Ubuntu'; 
-      font-weight: 400; 
-      font-size: 24px; 
-      color: #759087; 
+        font-family: 'Ubuntu'; 
+        font-weight: 400; 
+        font-size: 24px; 
+        color: #759087; 
     }
     h5 { 
-      font-family: 'Ubuntu'; 
-      font-weight: 400; 
-      font-size: 20px; 
-      color: #759087; 
+        font-family: 'Ubuntu'; 
+        font-weight: 400; 
+        font-size: 20px; 
+        color: #759087; 
     }
     p {
-      color:#759087; 
-      font-size:18px; 
-      text-align: left; 
-      font-family : 'Vollkorn';
-      margin: 10px; 
+        color:#759087; 
+        font-size:18px; 
+        text-align: left; 
+        font-family : 'Vollkorn';
+        margin: 10px; 
     }
     #header {
-      width: 700px;
-      margin: 70px auto;
-      padding-top: 50px;
-      padding-bottom: 25px;
-      border-radius: 1em;
+        width: 700px;
+        margin: 70px auto;
+        padding-top: 50px;
+        padding-bottom: 25px;
+        border-radius: 1em;
     }
-    #body {
-      width: 925px;
-      margin: 70px auto;
-      border-radius: 1em;
+    .section {
+        width: 100%;
+        margin: 0 28% 0 18%;
     }
-    p.dateclass {
-      float: left;
-      text-align: right;
-      color: #b31a39;
-      margin-right: 10px;
+    p.date {
+        float: left;
+        width: 9.7%;
+        text-align: right;
+        display: inline-block;
+        color: #b31a39;
+        clear: both;
+        padding-right: .3px;
     }
-    p.postclass {
-      float: left;
-      text-align: left;
-      margin-left: auto;
-      margin-right: auto;
-      width: 700px
+    p.post {
+        float: left;
+        width: 44%;
+        display: inline-block;
+        margin-bottom: 20px;
     }
     a:hover {
-      color: #252525;
+        color: #252525;
     }
     #floating-social-icons {
-      list-style-type: none;
-      position: fixed;
-      right: 25px;
-      top: 140px;
-      padding: 10px;
+        list-style-type: none;
+        position: fixed;
+        right: 25px;
+        top: 140px;
+        padding: 10px;
     }
     #floating-social-icons li a {
-      display: block;
-      background-repeat: no-repeat;
-      background-position: top right;
+        display: block;
+        background-repeat: no-repeat;
+        background-position: top right;
     }
     .more {
-      display: none; 
-      float: left;
-      text-align: left;
-      margin-left: 119px;
-      margin-right: auto;
-      width: 700px
+        display: none; 
+        float: left;
+        text-align: left;
+        margin-left: 119px;
+        margin-right: auto;
+        width: 700px
     }
     a.showLink, a.hideLink {
-      text-decoration: none;
-      color: #b31a39; 
-      font-weight: bold;
-      padding-left: 5px;
+        text-decoration: none;
+        color: #b31a39; 
+        font-weight: bold;
+        padding-left: 5px;
     }
-  </style>
+</style>
 
 <head>
-  <ul id="floating-social-icons">
-      <li><a href="https://github.com/coderica" rel="external"><img src="/images/github-icon-01.png" alt="Github"></a></li>
-      <li><a href="http://www.linkedin.com/in/coderica" rel="external"><img src="/images/linkedin-icon-05.png" alt="LinkedIn"></a></li>
-      <li><a href="mailto: esm1018@gmail.com" rel="external"><img src="/images/email-icon-02.png" alt="Gmail"> </a></li>
-      <li><a href="https://plus.google.com/u/0/112543160192405404260/posts" rel="external"><img src="/images/gplus-icon-06.png" alt="Google Plus"></a></li>
-      <li><a href="https://twitter.com/@coderica" rel="external"><img src="images/twitter-icon-04.png" alt="Twitter"></a></li>
-      <li><a href="https://www.facebook.com/erica.marroquin.336" rel="external"><img src="/images/facebook-icon-03.png" alt="Facebook"></a></li>
-      <li><a href="https://www.pinterest.com/esm1018/graphic" rel="external"><img src="/images/pinterest-icon-07.png" alt="Pinterest"></a></li>
-  </ul>
-  <div id="header">
-    <center>
-    <h1>welcome<br>to my humble<br>IP address</h1>
-    <h3><i>"Where the struggle is real & abundant!"</i></h3>
-  </div>
+      <ul id="floating-social-icons">
+          <li>
+              <a href="https://github.com/coderica" rel="external"><img src="/images/github-icon-01.png" alt="Github"></a></li>
+          <li>
+              <a href="http://www.linkedin.com/in/coderica" rel="external"><img src="/images/linkedin-icon-05.png" alt="LinkedIn"></a></li>
+          <li>
+              <a href="mailto: esm1018@gmail.com" rel="external"><img src="/images/email-icon-02.png" alt="Gmail"> </a></li>
+          <li>
+              <a href="https://plus.google.com/u/0/112543160192405404260/posts" rel="external"><img src="/images/gplus-icon-06.png" alt="Google Plus"></a></li>
+          <li>
+              <a href="https://twitter.com/@coderica" rel="external"><img src="images/twitter-icon-04.png" alt="Twitter"></a></li>
+          <li>
+              <a href="https://www.facebook.com/erica.marroquin.336" rel="external"><img src="/images/facebook-icon-03.png" alt="Facebook"></a></li>
+          <li>
+              <a href="https://www.pinterest.com/esm1018/graphic" rel="external"><img src="/images/pinterest-icon-07.png" alt="Pinterest"></a></li>
+      </ul>
+
+      <div id="header">
+          <center>
+              <h1>welcome<br>to my humble<br>IP address</h1>
+              <h3><i>"Where the struggle is real & abundant!"</i></h3>
+      </div>
 </head>
 
 <body>
-<div id="body">
-    <p class="dateclass">Sat 7 Feb 2015</p>
-    <p class="postclass">
-          I do <i>NOT</i> do rote memorization well. I used to cram little jingles in my head for each word and then forget them immediately after hyperventilating through a painfully long test. I thought I'd never have to memorize vocabulary again when I finished grammar in high school. WELL I THOUGHT WRONG.<br><br>
-          Memorizing commands is a huge part of learning to code. It helps that, for the most part, the language is very logical. Github and git and terminal and the general language of developing is incredibly intuitive. This was all created by people who wanted to make the process of creation <i>as simple as possible</i>. It's quite beautiful, really.<a href="#" id="two-show" class="showLink" onclick="showHide('two');return false;">+</a></p>
-    <div id="two" class="more">
-          <p>I have a tendency to make projects out of the information I need to learn. Forcing yourself to work with the language is the best way to learn it, and a lot of times you end up enjoying whatever it is you choose to work on. If all else fails, revert to jingles.</p>
-          <p>Terminal used to be this scary portal to the innards of my computer that I loathed to open in the rare case I needed to use it for something which I didn't really understand. Now its a powerhouse with direct access to all the amazing hidden capabilities in the dark corners of my computer. It is technically a CLI, or command line interface with an integrated language you must learn to be able to communicate with the operating system. That sounds like a bunch of shmancy talk, but its really pretty simple, and incredibly useful. To get started, I definitely recommend <a href="http://cli.learncodethehardway.org/book/" rel="external">this</a> site. Also, feel free to use my nifty little <a href="https://www.dropbox.com/sh/sy393a6jo2mw8cy/AACSZSmSHjo5fzcG2v7ChWvra?dl=0" rel="external">CLI wallpaper</a> I made (remember my comment about little projects), because all the ones on the internetz are fugly.</p>
-          <p><b>GIT and GITHUB:</b> Git uses a branching technique to manage and save multiple versions of the same file. What is magical about this is that it can be ANY kind of file. I'm shocked I didn't learn about this in design school, honestly (not to mention that it would have saved me SO MUCH HEARTBREAK). For all you dummies out there (it's okay, I'm a dummy too), multiple file versions are GREAT because if you screw up (which I plan to) or want to compare changes, you can refer back to previous versions. This is especially important in coding because if your client's website crashes, you have to make it work again. Without backups, basically you'd better hope your client isn't Nike. Github is basically an online portal for sharing/editing git versions, which makes working in teams incredibly fluid. Git is a software for your computer (which you access through the CLI), while Github is a great online resource (which you communicate with through the CLI... see where this is going?). TRUST ME, GIT MAKES SENSE.</p>
-          <p>I'll leave you with a funny little anecdote...I happened to save this post in notes before I knew how to push the file to Github. When I realized I had somehow accidentally deleted the note *SADFACE*. It was awful. So what did I do? Well first I flipped out...</p>
-          <p>WHERE ARE MY THOUGHTS?! OH GOD, NOT MY THOUGHTS! I'LL <b><i>NEVER</i></b> HAVE THE SAME THOUGHTS AGAIN. NNOOOOOOOOOOOO!! Then a little birdie mentioned Time Machine. Well it wasn't so simple as all that but I managed to get my thoughts back (yay for me! yay for you!) and the whole ordeal made me realize that Time Machine is A GIANT VERSION CONTROL MANAGER!! Yay again! The end.<a href="#" id="two-hide" class="hideLink" onclick="showHide('two');return false;">-</a></p>
+      <div class='section'>
+          <p class='date'>Sat 7 Feb 2015</p>
+          <p class='post'>
+                I do <i>NOT</i> do rote memorization well. I used to cram little jingles in my head for each word and then forget them immediately after hyperventilating through a painfully long test. I thought I'd never have to memorize vocabulary again when I finished grammar in high school. WELL I THOUGHT WRONG.<br><br>
+                Memorizing commands is a huge part of learning to code. It helps that, for the most part, the language is very logical. Github and git and terminal and the general language of developing is incredibly intuitive. This was all created by people who wanted to make the process of creation <i>as simple as possible</i>. It's quite beautiful, really.<a href="#" id="two-show" class="showLink" onclick="showHide('two');return false;">+</a>
+          </p>
+                <div id="two" class="more">
+                      <p>I have a tendency to make projects out of the information I need to learn. Forcing yourself to work with the language is the best way to learn it, and a lot of times you end up enjoying whatever it is you choose to work on. If all else fails, revert to jingles.</p>
+                      <p>Terminal used to be this scary portal to the innards of my computer that I loathed to open in the rare case I needed to use it for something which I didn't really understand. Now its a powerhouse with direct access to all the amazing hidden capabilities in the dark corners of my computer. It is technically a CLI, or command line interface with an integrated language you must learn to be able to communicate with the operating system. That sounds like a bunch of shmancy talk, but its really pretty simple, and incredibly useful. To get started, I definitely recommend <a href="http://cli.learncodethehardway.org/book/" rel="external">this</a> site. Also, feel free to use my nifty little <a href="https://www.dropbox.com/sh/sy393a6jo2mw8cy/AACSZSmSHjo5fzcG2v7ChWvra?dl=0" rel="external">CLI wallpaper</a> I made (remember my comment about little projects), because all the ones on the internetz are fugly.</p>
+                      <p><b>GIT and GITHUB:</b> Git uses a branching technique to manage and save multiple versions of the same file. What is magical about this is that it can be ANY kind of file. I'm shocked I didn't learn about this in design school, honestly (not to mention that it would have saved me SO MUCH HEARTBREAK). For all you dummies out there (it's okay, I'm a dummy too), multiple file versions are GREAT because if you screw up (which I plan to) or want to compare changes, you can refer back to previous versions. This is especially important in coding because if your client's website crashes, you have to make it work again. Without backups, basically you'd better hope your client isn't Nike. Github is basically an online portal for sharing/editing git versions, which makes working in teams incredibly fluid. Git is a software for your computer (which you access through the CLI), while Github is a great online resource (which you communicate with through the CLI... see where this is going?). TRUST ME, GIT MAKES SENSE.</p>
+                      <p>I'll leave you with a funny little anecdote...I happened to save this post in notes before I knew how to push the file to Github. When I realized I had somehow accidentally deleted the note *SADFACE*. It was awful. So what did I do? Well first I flipped out...</p>
+                      <p>WHERE ARE MY THOUGHTS?! OH GOD, NOT MY THOUGHTS! I'LL <b><i>NEVER</i></b> HAVE THE SAME THOUGHTS AGAIN. NNOOOOOOOOOOOO!! Then a little birdie mentioned Time Machine. Well it wasn't so simple as all that but I managed to get my thoughts back (yay for me! yay for you!) and the whole ordeal made me realize that Time Machine is A GIANT VERSION CONTROL MANAGER!! Yay again! The end.<a href="#" id="two-hide" class="hideLink" onclick="showHide('two');return false;">-</a></p>
+                </div>
       </div>
-    <p class="dateclass">Thu 5 Feb 2015</p>
-    <p class="postclass">
-          In coding, the only thing which holds us back from creating is our own ignorance, so learn as much as you can, most especially regarding efficiency. The goal of every good developer is to remove as much redundancy as possible so that they can focus on producing. Spend a couple of weeks committed to your work flow. Figure out which text editor is best for you (I really using sublime) and then take the time to learn how to customize it with plugins and settings and themes. Read a bajillion "Top 10 tips on //ThingofInterest//", "How to //DoAThing//" and "Why I switched to //AnotherThing//" articles. AUTOMATE EVERYTHING. Spend some hours browsing <a href="http://www.skillcrush.com/" rel="external">Skillcrush</a> or some other beautiful webdev blogsite with succinct articles. Open an account with <a href="http://www.stackoverflow.com/" rel="external">Stack Overflow</a> and <a href="http://www.github.com/" rel="external">Github</a> and familiarize yourself with online developer etiquette. Get annoyingly good at Git and your CLI (command line interface). Did I just throw a bunch of words at you which you aren't familiar with? If you learn nothing else from my post, at least take this away: Google is absolutely the <i><b>MOST</b></i> powerful tool we have access to online. Google is the ultimate enabler, and puts <i>all of the knowledge in the history of the world</i> in your hands. Don't waste it.<a href="#" id="three-show" class="showLink" onclick="showHide('three');return false;">+</a></p>
-    <div id="three" class="more">
-          <p>If you are absolutely at a loss of where to start, I have two suggestions I will point you to, which I personally used to dive in. The first is this <a href="https://www.udemy.com/complete-web-developer-course" rel="external">Udemy</a> course by Rob Percival. Not only is it structured in such a way that a third grader could follow his tutorials, he covers nearly all of the most popular languages, and is incredibly responsive to his students. It doesn't hurt that he is a marketing <i>genius</i> (seriously, take notes) and his book on making money while learning to code is definitely worth the read. It is paid, but look for a promo code online. He almost always has some outlandish discount.</p>
-          <p>My second suggestion, which is much more radical, would be to consider a developer bootcamp. There are literally hundreds to choose from, catering to all different audiences at all different skill levels with all different price points. You are bound to find something which suits your needs. The big names are <a href="https://www.hackreactor.com" rel="external">Hack Reactor</a>, <a href="https://www.appacademy.io" rel="external">App Academy</a>, and of course, the one I chose to attend (which also happens to be the original developer bootcamp) <a href="https://www.devbootcamp.com" rel="external">Dev Bootcamp</a> (more on why I chose DBC later). I suggest you start <a href="http://www.skilledup.com/articles/the-ultimate-guide-to-coding-bootcamps-the-exhaustive-list/" rel="external">here</a>, a very long list detailing all of the different available bootcamps, what they each teach and cost.</p>
-          <p>Below I have detailed a short list of more resources to help inspire your own research.
-          <br><br>- This is an amazing <a href="http://www.whoishostingthis.com/blog/2014/09/04/learn-to-code/" rel="external">infographic</a> detailing each major language, what you can achieve with it, and its relative job market demographics.
-          <br>- Here is a beautifully written inspirational article about learning to code written by the talented young professional, <a href="https://medium.com/@cecilycarver/things-i-wish-someone-had-told-me-when-i-was-learning-how-to-code-565fc9dcb329" rel="external">Cecily Carver</a>.
-          <br>- Last, I love this <a href="http://www.quora.com/Any-bootcamps-that-give-scholarships-to-women-besides-Dev" rel="external">Quora thread</a> about developer bootcamp scholarships for women (sorry guys).<br><br>Before I leave you to your own devices, I offer you an expression which has completely changed my life, spoken by a man who lived by his own advice, "Stay hungry...Stay foolish."  <a href="#" id="three-hide" class="hideLink" onclick="showHide('three');return false;">-</a></p>
+
+      <div class='section'>
+          <p class='date'>Thu 5 Feb 2015</p>
+          <p class='post'>
+                In coding, the only thing which holds us back from creating is our own ignorance, so learn as much as you can, most especially regarding efficiency. The goal of every good developer is to remove as much redundancy as possible so that they can focus on producing. Spend a couple of weeks committed to your work flow. Figure out which text editor is best for you (I really using sublime) and then take the time to learn how to customize it with plugins and settings and themes. Read a bajillion "Top 10 tips on //ThingofInterest//", "How to //DoAThing//" and "Why I switched to //AnotherThing//" articles. AUTOMATE EVERYTHING. Spend some hours browsing <a href="http://www.skillcrush.com/" rel="external">Skillcrush</a> or some other beautiful webdev blogsite with succinct articles. Open an account with <a href="http://www.stackoverflow.com/" rel="external">Stack Overflow</a> and <a href="http://www.github.com/" rel="external">Github</a> and familiarize yourself with online developer etiquette. Get annoyingly good at Git and your CLI (command line interface). Did I just throw a bunch of words at you which you aren't familiar with? If you learn nothing else from my post, at least take this away: Google is absolutely the <i><b>MOST</b></i> powerful tool we have access to online. Google is the ultimate enabler, and puts <i>all of the knowledge in the history of the world</i> in your hands. Don't waste it.<a href="#" id="three-show" class="showLink" onclick="showHide('three');return false;">+</a>
+          </p>
+                <div id="three" class="more">
+                      <p>If you are absolutely at a loss of where to start, I have two suggestions I will point you to, which I personally used to dive in. The first is this <a href="https://www.udemy.com/complete-web-developer-course" rel="external">Udemy</a> course by Rob Percival. Not only is it structured in such a way that a third grader could follow his tutorials, he covers nearly all of the most popular languages, and is incredibly responsive to his students. It doesn't hurt that he is a marketing <i>genius</i> (seriously, take notes) and his book on making money while learning to code is definitely worth the read. It is paid, but look for a promo code online. He almost always has some outlandish discount.</p>
+                      <p>My second suggestion, which is much more radical, would be to consider a developer bootcamp. There are literally hundreds to choose from, catering to all different audiences at all different skill levels with all different price points. You are bound to find something which suits your needs. The big names are <a href="https://www.hackreactor.com" rel="external">Hack Reactor</a>, <a href="https://www.appacademy.io" rel="external">App Academy</a>, and of course, the one I chose to attend (which also happens to be the original developer bootcamp) <a href="https://www.devbootcamp.com" rel="external">Dev Bootcamp</a> (more on why I chose DBC later). I suggest you start <a href="http://www.skilledup.com/articles/the-ultimate-guide-to-coding-bootcamps-the-exhaustive-list/" rel="external">here</a>, a very long list detailing all of the different available bootcamps, what they each teach and cost.</p>
+                      <p>Below I have detailed a short list of more resources to help inspire your own research.
+                      <br><br>- This is an amazing <a href="http://www.whoishostingthis.com/blog/2014/09/04/learn-to-code/" rel="external">infographic</a> detailing each major language, what you can achieve with it, and its relative job market demographics.
+                      <br>- Here is a beautifully written inspirational article about learning to code written by the talented young professional, <a href="https://medium.com/@cecilycarver/things-i-wish-someone-had-told-me-when-i-was-learning-how-to-code-565fc9dcb329" rel="external">Cecily Carver</a>.
+                      <br>- Last, I love this <a href="http://www.quora.com/Any-bootcamps-that-give-scholarships-to-women-besides-Dev" rel="external">Quora thread</a> about developer bootcamp scholarships for women (sorry guys).<br><br>Before I leave you to your own devices, I offer you an expression which has completely changed my life, spoken by a man who lived by his own advice, "Stay hungry...Stay foolish."  <a href="#" id="three-hide" class="hideLink" onclick="showHide('three');return false;">-</a></p>
+                </div>
       </div>
-  <br>
-    <p class="dateclass">Fri 9 Jan 2015</p>
-    <p class="postclass">
-          As a newly christened member of the developer community, my first inclination is to insist that what I have to say is not relevant to the coding community. However, after giving this some thought, I realize that this is not only utterly false, but <i>backwards</i>. Starting from scratch not only means that I have a clean slate for learning, but an unbiased opinion on process, and a thirst for knowledge. By creating the habit of sharing my journey and my findings with others, I am bound to influence the community through a passion for not only good code, but <b><i>creative code</i></b>. So, in lieu of this understanding, I would like to ask you to do three things...<a href="#" id="four-show" class="showLink" onclick="showHide('four');return false;">+</a></p>
-    <div id="four" class="more">
-          <p>Firstly, please for the love of git don't look at the source code of this site. I will be more than happy to teach you how to do anything you see on this page (tweet/email/pm me!), but I'm warning you, code flow looks like a 16 year old boy's bedroom after a week of being home for a week. I'm not kidding, its nasty in there. Just... don't.</p>
-          <p>Second, I would encourage you not to take my word for anything. Research, as I have already discovered, is a developer's best friend. There are so many people in this community who want to share their knowledge, and if you aren't exploiting this amazing opportunity to <i>learn more</i>, you aren't doing it right.</p><p>Third, whatever it is, enjoy it! I have been stuck doing something I don't love, and it is a complete was of time, energy, and ethos. Movement is life, and if you aren't moving forwards, you are stagnant... like the Nile, which harbors all sorts nasty. You get it. No? Look it up. So to end, I leave you with this poem, a glance into the flow of a passionate developer...</p>
-          <p>
-          Pour up (code), head shot (code)<br>
-          Sit down (code), stand up (code)<br>
-          Pass out (code), wake up (code)<br>
-          Faded (code), faded (code)<a href="#" id="four-hide" class="hideLink" onclick="showHide('four');return false;">-</a>
-          <br> <br> <br> <br> <br> <br> <br> <br> <br> <br></p>
-      </div>
-  </div>
+
+      <div class='section'>
+          <p class='date'>Fri 9 Jan 2015</p>
+          <p class='post'>
+                As a newly christened member of the developer community, my first inclination is to insist that what I have to say is not relevant to the coding community. However, after giving this some thought, I realize that this is not only utterly false, but <i>backwards</i>. Starting from scratch not only means that I have a clean slate for learning, but an unbiased opinion on process, and a thirst for knowledge. By creating the habit of sharing my journey and my findings with others, I am bound to influence the community through a passion for not only good code, but <b><i>creative code</i></b>. So, in lieu of this understanding, I would like to ask you to do three things...<a href="#" id="four-show" class="showLink" onclick="showHide('four');return false;">+</a>
+          </p>
+                <div id="four" class="more">
+                      <p>Firstly, please for the love of git don't look at the source code of this site. I will be more than happy to teach you how to do anything you see on this page (tweet/email/pm me!), but I'm warning you, code flow looks like a 16 year old boy's bedroom after a week of being home for a week. I'm not kidding, its nasty in there. Just... don't.</p>
+                      <p>Second, I would encourage you not to take my word for anything. Research, as I have already discovered, is a developer's best friend. There are so many people in this community who want to share their knowledge, and if you aren't exploiting this amazing opportunity to <i>learn more</i>, you aren't doing it right.</p><p>Third, whatever it is, enjoy it! I have been stuck doing something I don't love, and it is a complete was of time, energy, and ethos. Movement is life, and if you aren't moving forwards, you are stagnant... like the Nile, which harbors all sorts nasty. You get it. No? Look it up. So to end, I leave you with this poem, a glance into the flow of a passionate developer...</p>
+                      <p>
+                      Pour up (code), head shot (code)<br>
+                      Sit down (code), stand up (code)<br>
+                      Pass out (code), wake up (code)<br>
+                      Faded (code), faded (code)<a href="#" id="four-hide" class="hideLink" onclick="showHide('four');return false;">-</a></p>
+                </div>
+        </div>
 </body>
 </html>
 
