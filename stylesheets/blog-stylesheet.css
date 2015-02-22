@@ -1,0 +1,26 @@
+.section {
+    width: 100%;
+    margin: 0 20% 0 10%;
+}
+.post {
+    width: 60%;
+    display: inline-block;
+    float: left;
+    margin-bottom: 20px;
+}
+.date {
+    float: left;
+    width: 10%;
+    color: red;
+    display: inline-block;
+    clear: both;
+    text-align: right;
+    padding-right: 10px;
+}
+h1 {
+    color: gray;
+    font-size: 30px;
+}
+p {
+    
+}
