@@ -1,4 +1,5 @@
 code
+	-add padding to bottom of page
 	-add and format an opaque title for each post
 	-figure out how to link posts in from separate files instead of directly into code
 				http://www.broken-links.com/2013/04/10/the-template-element/
