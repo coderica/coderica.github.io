@@ -1,28 +1,38 @@
-<!DOCTYPE html>
-<html>
 
-<head>
-      <title>Your page title here</title>
-      <meta charset="UTF-8">
-      <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
-</head>
 
-<body>
-    <div class='section'>
-            <div class='date'>Post Date</div>
-            <div class='post'>
-              <h1>Post Title</h1>
-                    <p>
-                        First paragraph goes here.
-                    </p>
-                    <p>
-                        Second paragraph goes here.
-                    </p>
-                    <p>
-                        Third paragraph goes here.
-                    </p>
-            </div>
-    </div>
 
-</body>
-</html>
+<!-- post template for now -->
+
+      <div class='section'>
+          <p class='date'>DAY ## MON YEAR</p>
+          <p class='post'>
+                    First paragraph goes here.
+              <a href="#" id="NEXT_NUM-show" class="showLink" onclick="showHide('NEXT_NUM');return false;">+</a>
+          </p>
+              <div id="NEXT_NUM" class="more">
+                    <p>Second paragraph goes here.</p>
+
+                    <p>Third paragraph goes here.</p>
+
+                    <p>Final paragraph goes here.
+              <a href="#" id="NEXT_NUM-hide" class="hideLink" onclick="showHide('NEXT_NUM');return false;">-</a></p>
+              </div>
+      </div>
+
+
+
+
+<!-- post template for later, need to tweak and add show/hide function, then integrate -->
+
+<div class='section'>
+        <div class='date'>Post Date</div>
+        <div class='post'>
+          <h1>Post Title</h1>
+                <p>
+                    First paragraph goes here.
+                </p>
+                <p>
+                    Second paragraph goes here (etc).
+                </p>
+        </div>
+</div>
