@@ -8,6 +8,7 @@ excerpt: "Ruby gives us two ways to deal with organizing data structures; arrays
 
 <p>
 Ruby gives us two ways to deal with organizing data structures; arrays and hashes. Both are very similar and easily confused. What you can do with arrays, you can also often do with hashes, and visa versa. They share many of the same methods, and are even born in the same fashion...
+</p><p>
   <code>new_empty_hash = {}</code> vs. <code>new_empty_array = []</code>
 </p><p>
 To start, lets consider the relationship between the two functions. An array is basically a hash with predefined integers as the key for each value. In arrays, we call them the "index". Let's inspect a basic array.
