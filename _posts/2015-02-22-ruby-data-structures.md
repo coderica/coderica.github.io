@@ -9,7 +9,9 @@ excerpt: "Ruby gives us two ways to deal with organizing data structures; arrays
 <p>
 Ruby gives us two ways to deal with organizing data structures; arrays and hashes. Both are very similar and easily confused. What you can do with arrays, you can also often do with hashes, and visa versa. They share many of the same methods, and are even born in the same fashion...
 </p><p>
-  <code>new_empty_hash = {}</code> vs. <code>new_empty_array = []</code>
+  <code>new_empty_hash = {}</code>
+  vs.
+  <code>new_empty_array = []</code>
 </p><p>
 To start, lets consider the relationship between the two functions. An array is basically a hash with predefined integers as the key for each value. In arrays, we call them the "index". Let's inspect a basic array.
 </p><p>
@@ -25,9 +27,9 @@ But wait, snake is the third element. Why did ruby return pig? This is evidence 
 </p><p>
 Now how would this information look as an array? An array takes <i>two</i> forms of input.
 </p><p>
-  <code>animal_hash = {0 => "cat", 1 => "dog", 2 => "snake", 3 => "pig", 4 => "bird"}
+  <code>animal_hash = {0 => "cat", 1 => "dog", 2 => "snake", 3 => "pig", 4 => "bird"}</code>
 </p><p>
-  animal_hash[1] => dog</code>
+  <code>animal_hash[1] => dog</code>
 </p><p>
 But what if we call the whole range of elements like we did with the array?
 </p><p>
