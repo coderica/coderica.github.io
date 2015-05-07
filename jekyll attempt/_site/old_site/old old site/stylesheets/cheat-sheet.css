@@ -1,0 +1,67 @@
+body {
+	background-color: #252525;
+}
+
+.content {
+	text-align: center;
+	margin: 35px;
+}
+
+#columns {
+	-webkit-column-count:3 ;
+	-moz-column-count: 3;
+	column-count: 3;
+
+	-webkit-column-gap: 8px;
+	-moz-column-gap: 8px;
+	column-gap: 8px;
+}
+
+.textformat {
+	-webkit-column-count:2 ;
+	-moz-column-count: 2;
+	column-count: 2;
+
+	-webkit-column-gap: 4px;
+	-moz-column-gap: 4px;
+	column-gap: 4px;
+}
+
+h1 {
+	font-family: 'Lobster Two', cursive;
+	font-size: 50px;
+	color: #5A0000;
+	margin-bottom: 0px;
+	color: #f2f2f2;
+}
+
+section {
+	font-family: sans-serif;
+	border-width: 2px;
+	border-color: #616161;
+	display: inline-block;
+	vertical-align: top;
+	width: 90%;
+	margin: 16px;
+	padding: 10px;
+	text-align: center;
+	color: #616161;
+
+	-webkit-column-break-inside: avoid;
+	-moz-column-break-inside: avoid;
+	column-break-inside: avoid;
+}
+
+section h2 {
+	font-size: 28px;
+	font-weight: bold;}
+
+p .term {
+	font-size: 16px;
+	font-weight: bold;
+	text-align: right;
+}
+
+p .definition {
+	font-size: 16px;
+}

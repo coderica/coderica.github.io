@@ -1,23 +1,54 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
 
-<div class="home">
+<head>
+    <title>Coderica</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="blog.css">
 
-  <h1 class="page-heading">Posts</h1>
+</head>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<body>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+	<header>
+		<div id="logo">
+			<img src="http://i60.tinypic.com/282q0wx.png" border="0">
+		</div>
+		<div id="right_head">
+		    <h1>Coderica*</h1>
+		    <h2>CREATIVE DESIGN</h2>
+		    <h2><font color="#FFE700">&&</font> DEVELOPMENT</h2>
+	    </div>
+	</header>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+	<hr>
+	
+	<nav>
+		<div id="main-menu-container">
+		    <div id="main-menu">
+		        <p><a href="">about</a></p>
+		        <p><a href="">projects</a></p>
+		        <p><a href="">blog</a></p>
+		        <p><a href="">resumé</a></p>
+		        <p><a href="">social</a></p>
+		    </div>
+		</div>
+	</nav>
+	
+	<main>
 
-</div>
+		<section>
+			<h3>Beauty && Functionality</h3>
+
+			<aside>
+				<!--Nothing Goes Here-->
+			</aside>
+
+			<article>
+				<p>
+					<b>Here's where</b> I would write about me. mememe. Yeah I really don't like this. Lorem ipsum and all that shit. So sleepy. Here's where I would write about me. mememe. Yeah I really don't like this. Lorem ipsum and all that shit. So sleepy. Here's where I would write about me. mememe. Yeah I really don't like this. Lorem ipsum and all that shit. So sleepy. Here's where I would write about me. mememe. Yeah I really don't like this. Lorem ipsum and all that shit. So sleepy.
+				</p>
+			</article>
+		</section>
+	</main>
+</body>
