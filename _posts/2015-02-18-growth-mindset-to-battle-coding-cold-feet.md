@@ -1,58 +1,17 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>Coderica</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="/stylesheets/layout.css">
-
-</head>
-
-<body>
-
-	<header>
-		<div id="logo">
-			<img src="http://i60.tinypic.com/282q0wx.png" border="0">
-		</div>
-		<div id="right_head">
-		    <h1>Coderica*</h1>
-		    <h2>CREATIVE DESIGN</h2>
-		    <h2><font color="#FFE700">&&</font> DEVELOPMENT</h2>
-	    </div>
-	</header>
-
-	<hr>
-	
-	<nav>
-		<div id="main-menu-container">
-		    <div id="main-menu">
-		        <p><a href="">about</a></p>
-		        <p><a href="">projects</a></p>
-		        <p><a href="">blog</a></p>
-		        <p><a href="">resumé</a></p>
-		        <p><a href="">social</a></p>
-		    </div>
-		</div>
-	</nav>
-	
-	<main>
-
-	<section>
-		<h3><a href="posts/feb_18.html">How Growth Mindset Can Dissuay Coding Cold Feet</a></h3>
-
-		<aside>
-			<hr>
-			<p>18 FEBRUARY 2015</p>
-			<hr>
-		</aside>
-
-		<article>
+---
+layout: post
+title: "Growth Mindset to Battle Coding Cold Feet"
+date: 2015-02-18
+categories: blog
+excerpt: "Did you ever find yourself suited up to jump in the pool, excitement pushing you to the edge, when all the sudden excitement turns to dread as your big toe hits the cold water and you are filled with regret. 'This was a terrible idea,' you think."
+---
 
 <p>
 Did you ever find yourself suited up to jump in the pool, excitement pushing you to the edge, when all the sudden excitement turns to dread as your big toe hits the cold water and you are filled with regret. "This was a terrible idea," you think.
 </p><p>
 Remember when you first started learning how to drive? Pulling out of the driveway was always the most terrifying part of the journey. What about driving a stick shift? Its the worst to finally have the car running smooth and you'd hit that dreaded stop light only to struggle out of first all over again.
-</p><p>How about skiing? I swear the worst part is getting off the lift thinking, "Shit... I have no idea what I'm doing" (of course you do it anyways because you're at the top of a damn mountain and there's no other option -- besides pansying down the lift, but who does that).
+</p><p>
+How about skiing? I swear the worst part is getting off the lift thinking, "Shit... I have no idea what I'm doing" (of course you do it anyways because you're at the top of a damn mountain and there's no other option -- besides pansying down the lift, but who does that).
 </p><p>
 Did you ever go bungee jumping? Sky diving? There's this crazy, soul-deep aversion to it, a buildup of nerves before you jump which nearly convince you to step down.
 </p><p>
@@ -68,14 +27,3 @@ This regenerative fear of not being <i>enough</i> is a shell around all of the t
 </p><p>
 My biggest realization since beginning my journey as a web developer has been that I will never be underwhelmed again. It's this great and terrible beauty that am starting to embrace. When the struggle gets real, I am reminded that I chose this, and I find comfort in the simple fact that learning new things is inherent in this field, something to be celebrated.
 </p>
-
-			</article>
-		</section>
-<!-- END BLOG POSTS HERE -->
-
-
-	</main>
-
-</body>
-
-</html>

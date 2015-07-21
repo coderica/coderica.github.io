@@ -1,54 +1,10 @@
-
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>Coderica</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="/stylesheets/layout.css">
-
-</head>
-
-<body>
-
-	<header>
-		<div id="logo">
-			<img src="http://i60.tinypic.com/282q0wx.png" border="0">
-		</div>
-		<div id="right_head">
-		    <h1>Coderica*</h1>
-		    <h2>CREATIVE DESIGN</h2>
-		    <h2><font color="#FFE700">&&</font> DEVELOPMENT</h2>
-	    </div>
-	</header>
-
-	<hr>
-	
-	<nav>
-		<div id="main-menu-container">
-		    <div id="main-menu">
-		        <p><a href="">about</a></p>
-		        <p><a href="">projects</a></p>
-		        <p><a href="">blog</a></p>
-		        <p><a href="">resumé</a></p>
-		        <p><a href="">social</a></p>
-		    </div>
-		</div>
-	</nav>
-	
-	<main>
-
-	<section>
-		<h3><a href="/posts/feb_12.html">Good Design Employs Beauty && Functionality</a></h3>
-
-		<aside>
-			<hr>
-			<p>12 FEBRUARY 2015</p>
-			<hr>
-		</aside>
-
-		<article>
-
+---
+layout: post
+title: "Tips for the Design Ignorant Developer"
+date: 2015-02-12
+categories: blog
+excerpt: "As you get into developing, especially at the start, you will begin to realize that you cannot entirely avoid working with design. Even if you aspire to be entirely back end, you will have to work with a designer to accomplish a task. The more you understand this aspect of your project, the more clear your objectives will be, especially within your code."
+---
 
 <p>
 As you get into developing, especially at the start, you will begin to realize that you cannot entirely avoid working with design. Even if you aspire to be entirely back end, you will have to work with a designer to accomplish a task. The more you understand this aspect of your project, the more clear your objectives will be, especially within your code. Regardless, as beginner developers, we won't have the luxury of hiring designer to help us show of our skills as web architects. Most of our work will be displayed in small scale personal or freelance projects. Like it or not, the aesthetic of your projects will effect the impression they make, regardless of how pretty the code is. Because of this, I have created a list of 11 basic design rules to help even the most design-blind programmers enhance the look of their sites. Obviously, rules can be broken, but that is best saved for a time when you understand why that rule exists in the first place. So let's get started!
@@ -74,15 +30,3 @@ As you get into developing, especially at the start, you will begin to realize t
 </p><p>
 <b>ELEVEN.</b> Finally, <i><u>never</u></i> use comic sans. Never use Papyrus. Never use brushstroke or Marker felt or Chalkboard or any of those corny title fonts that come with Microsoft Word. You will be made fun of. PROOF: <a href = "https://www.youtube.com/watch?v=eUTtt14G31c">Avatar Honest Trailer</a>  @ 1:55.
 </p>
-
-
-			</article>
-		</section>
-<!-- END BLOG POSTS HERE -->
-
-
-	</main>
-
-</body>
-
-</html>

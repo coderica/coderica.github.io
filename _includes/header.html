@@ -1,0 +1,27 @@
+<header>
+  
+  <div id="unstickyheader">
+    <div class="wrapper">
+      <div id="logo">
+        <img src="http://i60.tinypic.com/282q0wx.png" border="0">
+      </div>
+
+      <div id="right_head">
+        <h1>Coderica*</h1>
+        <h2>CREATIVE DESIGN</h2>
+        <h2><font color="#FFE700">&&</font> DEVELOPMENT</h2>
+      </div>
+    </div>
+
+    <hr>
+  </div>
+
+  <nav id='nav_bar'>
+    {% for page in site.pages %}
+      {% if page.title %}
+      <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+      {% endif %}
+    {% endfor %}
+  </nav>
+
+</header>

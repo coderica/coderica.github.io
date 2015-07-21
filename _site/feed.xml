@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Coderica</title>
+    <description>Erica SM Prenga - Personal blog and portfolio.</description>
+    <link>http://coderica.github.io//</link>
+    <atom:link href="http://coderica.github.io//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 21 Jul 2015 02:09:34 -0700</pubDate>
+    <lastBuildDate>Tue, 21 Jul 2015 02:09:34 -0700</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Ruby Hashes &amp;&amp; Arrays</title>
+        <description>&lt;p&gt;
+Ruby gives us two ways to deal with organizing data structures; arrays and hashes. Both are very similar and easily confused. What you can do with arrays, you can also often do with hashes, and visa versa. They share many of the same methods, and are even born in the same fashion...
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;code&gt;new_empty_hash = {}&lt;/code&gt;
+  vs.
+  &lt;code&gt;new_empty_array = []&lt;/code&gt;
+&lt;/p&gt;
+&lt;p&gt;
+To start, lets consider the relationship between the two functions. An array is basically a hash with predefined integers as the key for each value. In arrays, we call them the &quot;index&quot;. Let&#39;s inspect a basic array.
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;code&gt;animal_array = [&quot;cat&quot;, &quot;dog&quot;, &quot;snake&quot;, &quot;pig&quot;, &quot;bird&quot;]&lt;/code&gt;
+&lt;/p&gt;
+&lt;p&gt;
+This array of animals only has one source of input. All we can see is the name of the elements, but our array is secretly counting them for us. Let&#39;s access our array.
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;code&gt;animal_array[3] =&amp;gt; pig&lt;/code&gt;
+&lt;/p&gt;
+&lt;p&gt;
+But wait, snake is the third element. Why did ruby return pig? This is evidence of how computers count. Unlike humans, computers consider 0 to be an integer, despite that it represents nothing (it is also &lt;i&gt;even&lt;/i&gt;, which will be important to know later). Because of this, our array is indexed from 0 to 4, rather than 1 to 5. Lets try again.
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;code&gt;animal_array[0..4] =&amp;gt; cat dog snake pig bird&lt;/code&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Now how would this information look as an array? An array takes &lt;i&gt;two&lt;/i&gt; forms of input.
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;code&gt;animal_hash = {0 =&amp;gt; &quot;cat&quot;, 1 =&amp;gt; &quot;dog&quot;, 2 =&amp;gt; &quot;snake&quot;, 3 =&amp;gt; &quot;pig&quot;, 4 =&amp;gt; &quot;bird&quot;}&lt;/code&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;code&gt;animal_hash[1] =&amp;gt; dog&lt;/code&gt;
+&lt;/p&gt;
+&lt;p&gt;
+But what if we call the whole range of elements like we did with the array?
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;code&gt;animal_hash[0..4] =&amp;gt; nil&lt;/code&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Why do we get nil (which means &quot;nothing&quot;)? Because the key in a hash can be anything we want, there is no designated &quot;order&quot; as there is with the array. The computer doesn&#39;t know what our logic is, and it will never assume anything. Even if our key integers are in order from least to greatest, we cannot call a range on it any more than we could say &quot;show me everything between cat and pig&quot;. It makes no sense. Here is where the differences begin to show. Lets look at a more useful example of a hash.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;code&gt;translation_hash = {&quot;lunes&quot; =&amp;gt; &quot;monday&quot;, &quot;martes&quot; =&amp;gt; &quot;tuesday&quot;, &quot;miercoles&quot; =&amp;gt; &quot;wednesday&quot;, &quot;jueves&quot; =&amp;gt; &quot;thursday&quot;, &quot;viernes&quot; =&amp;gt; &quot;friday&quot;, &quot;sabado&quot; =&amp;gt; &quot;saturday&quot;, &quot;domingo&quot; =&amp;gt; &quot;sunday&quot;}&lt;/code&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Here we have a translation of weekdays from Spanish to English. We can iterate through either key or value, depending on our needs. This will be very useful when you begin to write programs. Now lets go back to arrays.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;code&gt;translation_array = [[&quot;lunes&quot;, &quot;monday&quot;], [&quot;martes&quot;, &quot;tuesday&quot;], [&quot;miercoles&quot;, &quot;wednesday&quot;], [&quot;jueves&quot;, &quot;thursday&quot;], [&quot;viernes&quot;, &quot;friday&quot;], [&quot;sabado&quot;, &quot;saturday&quot;], [&quot;domingo&quot;, &quot;sunday&quot;]]&lt;/code&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Which can also be written
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;code&gt;translation_array = [[&quot;lunes&quot;, &quot;martes&quot;, &quot;miercoles&quot;, &quot;jueves&quot;, &quot;viernes&quot;, &quot;sabado&quot;, &quot;domingo&quot;] [&quot;monday&quot;, &quot;tuesday&quot;, &quot;wednesday&quot;, &quot;thursday&quot;, &quot;friday&quot;, &quot;saturday&quot;, &quot;sunday&quot;]]&lt;/code&gt;
+&lt;/p&gt;
+&lt;p&gt;
+The above was achieved with nested arrays (arrays within arrays). We can also put arrays within hashes. All of this can be useful depending on the goal. Note that there is a method, transpose, which actually allows us to manipulate the array and jump between these two different arrangements, which are considered to be &quot;columns&quot; and &quot;rows&quot;.
+&lt;/p&gt;
+</description>
+        <pubDate>Sun, 22 Feb 2015 00:00:00 -0800</pubDate>
+        <link>http://coderica.github.io//blog/2015/02/22/ruby-hashes-and-arrays.html</link>
+        <guid isPermaLink="true">http://coderica.github.io//blog/2015/02/22/ruby-hashes-and-arrays.html</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Growth Mindset to Battle Coding Cold Feet</title>
+        <description>&lt;p&gt;
+Did you ever find yourself suited up to jump in the pool, excitement pushing you to the edge, when all the sudden excitement turns to dread as your big toe hits the cold water and you are filled with regret. &quot;This was a terrible idea,&quot; you think.
+&lt;/p&gt;
+&lt;p&gt;
+Remember when you first started learning how to drive? Pulling out of the driveway was always the most terrifying part of the journey. What about driving a stick shift? Its the worst to finally have the car running smooth and you&#39;d hit that dreaded stop light only to struggle out of first all over again.
+&lt;/p&gt;
+&lt;p&gt;
+How about skiing? I swear the worst part is getting off the lift thinking, &quot;Shit... I have no idea what I&#39;m doing&quot; (of course you do it anyways because you&#39;re at the top of a damn mountain and there&#39;s no other option -- besides pansying down the lift, but who does that).
+&lt;/p&gt;
+&lt;p&gt;
+Did you ever go bungee jumping? Sky diving? There&#39;s this crazy, soul-deep aversion to it, a buildup of nerves before you jump which nearly convince you to step down.
+&lt;/p&gt;
+&lt;p&gt;
+With all of these experiences, it&#39;s never the actual DOING that was hard, it was dealing with the devil in our own heads telling us not to even try. Basically, that&#39;s what coding is like (minus an aversion to heights screaming at you to find the ground and kiss it). As soon as I stop coding, I start to get cold feet. A doubt in my own abilities creeps in and shadows my past accomplishments and my future aspirations. Web developing is downright scary, because we are faced with the knowledge that there will forever be more learning than learned. So how do we deal?
+&lt;/p&gt;
+&lt;p&gt;
+This regenerative fear of not being &lt;i&gt;enough&lt;/i&gt; is a shell around all of the things we can accomplish can be daunting to say the least, but not impossible to overcome. I have three bits of good news for anyone struggling with this.
+&lt;/p&gt;
+&lt;p&gt;
+1. &lt;u&gt;Believe in your own growth&lt;/u&gt; - Intelligence is not static, and neither is talent. Thankfully, our ability to learn goes far beyond genetics and youth. The stigma that &quot;smart&quot; and &quot;stupid&quot; are fixed traits is 100% false. You should be your own biggest fan. Start by getting some pom poms, if need be.
+&lt;/p&gt;
+&lt;p&gt;
+2. &lt;u&gt;Habit forming starts small&lt;/u&gt; - If coding scares you, do it regularly. Think in code when you perform an action. Stash your life into arrays and hashes. Most of all, type code regularly. It doesn&#39;t really matter what you are coding, just that you are building muscle memory. The more familiar we are with an action, the less hesitant we are to commit to it.
+&lt;/p&gt;
+&lt;p&gt;
+3. &lt;u&gt;Personal stakes can carry you&lt;/u&gt; - There will inevitably be times you want to give up. What stops you? Goals that would hurt to go back on. Make coding matter to your life. Quit your job. Code for charity. Find something you believe in and make your code valuable to that cause. Pressure, when applied correctly, can be a very useful tool.
+&lt;/p&gt;
+&lt;p&gt;
+My biggest realization since beginning my journey as a web developer has been that I will never be underwhelmed again. It&#39;s this great and terrible beauty that am starting to embrace. When the struggle gets real, I am reminded that I chose this, and I find comfort in the simple fact that learning new things is inherent in this field, something to be celebrated.
+&lt;/p&gt;
+</description>
+        <pubDate>Wed, 18 Feb 2015 00:00:00 -0800</pubDate>
+        <link>http://coderica.github.io//blog/2015/02/18/growth-mindset-to-battle-coding-cold-feet.html</link>
+        <guid isPermaLink="true">http://coderica.github.io//blog/2015/02/18/growth-mindset-to-battle-coding-cold-feet.html</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Clarifying Confusing CSS Comparisons</title>
+        <description>&lt;p&gt;
+When you first begin working with CSS, many people suggest getting the code to function is more important than HOW you get it function. To some degree, I can see how this would serve as a sort of confidence boost to encourage you to keep working with plans of going back later to revise old code. The problem is you probably never will. You might say &quot;Well that&#39;s just negative, Erica&quot;. Actually, quite the opposite sparky, this is assuming that the more you learn, the more work you will find, which won&#39;t leave much time to go back and fix old projects once you know better. Because of this, I tend to avoid that line of thinking. If you want to learn how to do something, learn it right the &lt;i&gt;first time&lt;/i&gt; so you can form good habits from the get go. This can be a bit overwhelming because there are a lot of opinions out there about what &quot;good code&quot; is, but there are some basics you should learn that will open you up to the option of delving into the subject more deeply on your own time. Thus, I have provided below some short discussions on some very common choices you will encounter, and when each option is appropriate.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;b&gt;CLASS || ID?&lt;/b&gt; This one is pretty simple. Is the element you are creating going to be recurring or used more than once? Use a class. If you are not sure, use a class. Is this a very unique situation on the page which you will need to stylize individually? Use an ID. You should only ever use an ID if it is going to be used one time. An id style will take precedence over class style because the element is being told &lt;i&gt;directly&lt;/i&gt; to do something. Here&#39;s a great analogical explanation on &lt;a href=&quot;http://stackoverflow.com/questions/544010/css-div-id-vs-div-class&quot;&gt;Stack Overflow&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;b&gt;MARGIN || PADDING?&lt;/b&gt; It is very easy to go on ignoring the difference between these two styles, tweaking margin-top and padding-bottom to your heart&#39;s content without any clue why there are two ways to do the same thing. Funnily enough, the people who wrote CSS didn&#39;t actually create two ways to do the same thing. What a thought, huh? Thankfully, the difference is very basic (which is why they are easily confused). Margin exists on the outside of block elements and will overlap automatically while padding is integrated into the element and is therefore always preserved. Both are spacing styles, but you should only ever use margin to separate the block from things outside it and use padding to move the contents away from the inside edges of the block. If two separate elements lay side by side, each with a margin of 1em, there will be (total) 1em of space between the two. If you change margin to padding, there will be a 2em space between them. If you are using both 1em margin and 1em padding on both elements, there will be a 3em space. Ya catch my drift? Google &quot;CSS Block Model&quot; for further explanation.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;b&gt;INLINE || BLOCK || INLINE-BLOCK?&lt;/b&gt; Inline display ignores top and bottom padding/margins, width, and height, as well as allows elements to sit side by side. The block display neither ignore those styles nor allow elements to sit side by side. Rather, they force elements to sit one on top of another. Inline-block allows elements to sit side by side AND respects sizing/spacing styles. &lt;a href=&quot;http://dustwell.com/div-span-inline-block.html&quot;&gt;Here&lt;/a&gt; is a great visual to clarify the difference between the three display properties.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;b&gt;DIV || TABLE?&lt;/b&gt; Let&#39;s put it this way: More divs, less tables. Divs were created to replace tables, and they do a pretty good job of it because they use less code. However, tables still have their purpose, mostly to display two dimensional data. If you are nesting tables, turn back and exit that rabbit hole. This conversation could probably go on for days. Some developers only ever use tables (I don&#39;t recommend this unless you plan to time travel back to the 90&#39;s), while others refuse to touch them with a ten foot pole. My suggestion practice making the same designs with both. When you see a site you like, check out the source code to see how they accomplished the positioning. Both operations have their individual strengths and weaknesses, and both can be easily abused, beat to a pulp by over-styling. When you consider that the golden rule of code is &quot;less is more&quot; (boast your &lt;strike&gt;lazyness&lt;/strike&gt; efficiency to the world!), the best thing you can do is get to know these strengths and weaknesses. I have come to the conclusion that a combination of the two will take you much further than sheer avoidance.
+&lt;/p&gt;
+</description>
+        <pubDate>Sun, 15 Feb 2015 00:00:00 -0800</pubDate>
+        <link>http://coderica.github.io//blog/2015/02/15/clarifying-confusting-css-comparisons.html</link>
+        <guid isPermaLink="true">http://coderica.github.io//blog/2015/02/15/clarifying-confusting-css-comparisons.html</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Tips for the Design Ignorant Developer</title>
+        <description>&lt;p&gt;
+As you get into developing, especially at the start, you will begin to realize that you cannot entirely avoid working with design. Even if you aspire to be entirely back end, you will have to work with a designer to accomplish a task. The more you understand this aspect of your project, the more clear your objectives will be, especially within your code. Regardless, as beginner developers, we won&#39;t have the luxury of hiring designer to help us show of our skills as web architects. Most of our work will be displayed in small scale personal or freelance projects. Like it or not, the aesthetic of your projects will effect the impression they make, regardless of how pretty the code is. Because of this, I have created a list of 11 basic design rules to help even the most design-blind programmers enhance the look of their sites. Obviously, rules can be broken, but that is best saved for a time when you understand why that rule exists in the first place. So let&#39;s get started!
+&lt;/p&gt;
+&lt;p&gt;
+&lt;b&gt;ONE.&lt;/b&gt; Readability is a big buzzword worth doing some research on. It has to do with how attractive the text on a page is a reader&#39;s eyes and how they process it psychologically. This is important for grabbing and keeping a person&#39;s attention, but to start, keep the length of body copy (lots of text) at &lt;a href=&quot;http://baymard.com/blog/line-length-readability&quot;&gt;45-75 characters per line&lt;/a&gt; for comfortable reading.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;b&gt;TWO.&lt;/b&gt; There are several file types you will use for images. Rule of thumb is PNG-24/JPEG for high quality photographs and PNG-8 for everything else. PNG allows for transparent images (great for logos) and keeps file size down to a minimum, allowing your site to run smoothly.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;b&gt;THREE.&lt;/b&gt; Design on a grid (a set of vertical and horizontal lines which guide the alignment of different attributes on a page). This should be a major part of your wire-framing process when you first sit down and decide how you want your project to look. Alignment, like readability, is very psychological, and can go a long way for making users comfortable within a page/application. The grid, like the cloud, can be a slippery slope of &quot;huh?&quot;, but don&#39;t read into it too much. Just remember that people like when things line up nicely (we are natural pattern makers, after all).
+&lt;/p&gt;
+&lt;p&gt;
+&lt;b&gt;FOUR.&lt;/b&gt; Make large gaps between font sizes for visual hierarchy and division of your page elements. You can also consider color and weight to accomplish this, depending on the look you want. The point is to make obvious differences. Check out this &lt;a href=&quot;https://webdesign.tutsplus.com/articles/understanding-typographic-hierarchy--webdesign-11636&quot;&gt;Tuts+ article&lt;/a&gt; for more info.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;b&gt;FIVE.&lt;/b&gt; Don’t go below 16px unless you want your content to be equivalent to the speedy disclaimers spoken at the end of commercials that everyone hates.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;b&gt;SIX.&lt;/b&gt; Don&#39;t use more than than 2 font families (3 if you&#39;re desperate). Play it safe with one serif and one sans serif, OR one “display” font (the fancy kind) and one sans serif. &lt;a href=&quot;http://www.webdesignerdepot.com/2013/03/serif-vs-sans-the-final-battle/&quot;&gt;This&lt;/a&gt;  is a nice article about serif vs sans serif.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;b&gt;SEVEN.&lt;/b&gt; Icons are abundant on websites. Google will yield a plethora of free downloads in all styles, colors, and file formats. Ff you have no experience editing vector files, make sure you can get each individual icon in a .png file in the size/color you want to upload to your site. Here are some great &lt;a href=&quot;http://www.flaticon.com/packs/&quot;&gt;flat icon packs&lt;/a&gt; and &lt;a href=&quot;http://line25.com/articles/20-free-social-media-icon-sets-to-use-on-your-website&quot;&gt;more&lt;/a&gt;. Another option is to treat your icons like fonts and use an online resource such as &lt;a href=&quot;http://fortawesome.github.io/Font-Awesome/icons/&quot;&gt;Font Awesome&lt;/a&gt; which you can incorporate into your code and edit (this comes in handy when dealing a lot with colors) much like web hosted fonts.&lt;/p&gt;
+&lt;p&gt;
+&lt;b&gt;EIGHT.&lt;/b&gt; Pairing font families is an art, no, a &lt;i&gt;science&lt;/i&gt;, and yes, it makes a huge difference. Often, when I already have one font in mind, I will google for pairings with that particular font. There are entire websites dedicated to great font pairs.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;b&gt;NINE.&lt;/b&gt; Choose a color scheme, and stick to it. If you are color blind, choose two complimentary colors, maybe 3. Black and white with one other bright color is also very in right now. &lt;a href=&quot;www.color-hex.com&quot;&gt;This site&lt;/a&gt; is great for choosing colors and knowing their hex codes, and &lt;a href=&quot;www.colourlovers.com/&quot;&gt;This site&lt;/a&gt; is great for browsing color themes others have created.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;b&gt;TEN.&lt;/b&gt; Integrating Google Fonts is free and universal. This is very useful for personal work and they have a ton of great fonts. Here is a great &lt;a href=&quot;http://designshack.net/articles/css/a-beginners-guide-to-using-google-web-fonts/&quot;&gt;Design Shack guide&lt;/a&gt; on integrating google fonts into your site (it is so easy). Also, to reiterate the importance of font pairing, &lt;a href=&quot;http://fontpair.co/&quot;&gt;FontPair&lt;/a&gt; is dedicated entirely to great google font pairings.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;b&gt;ELEVEN.&lt;/b&gt; Finally, &lt;i&gt;&lt;u&gt;never&lt;/u&gt;&lt;/i&gt; use comic sans. Never use Papyrus. Never use brushstroke or Marker felt or Chalkboard or any of those corny title fonts that come with Microsoft Word. You will be made fun of. PROOF: &lt;a href=&quot;https://www.youtube.com/watch?v=eUTtt14G31c&quot;&gt;Avatar Honest Trailer&lt;/a&gt;  @ 1:55.
+&lt;/p&gt;
+</description>
+        <pubDate>Thu, 12 Feb 2015 00:00:00 -0800</pubDate>
+        <link>http://coderica.github.io//blog/2015/02/12/tips-for-the-design-ignorant-developer.html</link>
+        <guid isPermaLink="true">http://coderica.github.io//blog/2015/02/12/tips-for-the-design-ignorant-developer.html</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Gitting Into the Groove</title>
+        <description>&lt;p&gt;
+I do &lt;i&gt;NOT&lt;/i&gt; do rote memorization well. I used to cram little jingles in my head for each word and then forget them immediately after hyperventilating through a painfully long test. I thought I&#39;d never have to memorize vocabulary again when I finished grammar in high school. WELL I THOUGHT WRONG. Memorizing commands is a huge part of learning to code. It helps that, for the most part, the language is very logical. Github and git and terminal and the general language of developing is incredibly intuitive. This was all created by people who wanted to make the process of creation &lt;i&gt;as simple as possible&lt;/i&gt;. It&#39;s quite beautiful, really.
+&lt;/p&gt;
+&lt;p&gt;
+I have a tendency to make projects out of the information I need to learn. Forcing yourself to work with the language is the best way to learn it, and a lot of times you end up enjoying whatever it is you choose to work on. If all else fails, revert to jingles.
+&lt;/p&gt;
+&lt;p&gt;
+Terminal used to be this scary portal to the innards of my computer that I loathed to open in the rare case I needed to use it for something which I didn&#39;t really understand. Now its a powerhouse with direct access to all the amazing hidden capabilities in the dark corners of my computer. It is technically a CLI, or command line interface with an integrated language you must learn to be able to communicate with the operating system. That sounds like a bunch of shmancy talk, but its really pretty simple, and incredibly useful. To get started, I definitely recommend &lt;a href=&quot;http://cli.learncodethehardway.org/book/&quot; rel=&quot;external&quot;&gt;this&lt;/a&gt; site. Also, feel free to use my nifty little &lt;a href=&quot;https://www.dropbox.com/sh/sy393a6jo2mw8cy/AACSZSmSHjo5fzcG2v7ChWvra?dl=0&quot; rel=&quot;external&quot;&gt;CLI wallpaper&lt;/a&gt; I made (remember my comment about little projects), because all the ones on the internetz are fugly.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;b&gt;GIT and GITHUB:&lt;/b&gt; Git uses a branching technique to manage and save multiple versions of the same file. What is magical about this is that it can be ANY kind of file. I&#39;m shocked I didn&#39;t learn about this in design school, honestly (not to mention that it would have saved me SO MUCH HEARTBREAK). For all you dummies out there (it&#39;s okay, I&#39;m a dummy too), multiple file versions are GREAT because if you screw up (which I plan to) or want to compare changes, you can refer back to previous versions. This is especially important in coding because if your client&#39;s website crashes, you have to make it work again. Without backups, basically you&#39;d better hope your client isn&#39;t Nike. Github is basically an online portal for sharing/editing git versions, which makes working in teams incredibly fluid. Git is a software for your computer (which you access through the CLI), while Github is a great online resource (which you communicate with through the CLI... see where this is going?). TRUST ME, GIT MAKES SENSE.
+&lt;/p&gt;
+&lt;p&gt;
+I&#39;ll leave you with a funny little anecdote...I happened to save this post in notes before I knew how to push the file to Github. When I realized I had somehow accidentally deleted the note *SADFACE*. It was awful. So what did I do? Well first I flipped out...
+&lt;/p&gt;
+&lt;p&gt;
+WHERE ARE MY THOUGHTS?! OH GOD, NOT MY THOUGHTS! I&#39;LL &lt;b&gt;&lt;i&gt;NEVER&lt;/i&gt;&lt;/b&gt; HAVE THE SAME THOUGHTS AGAIN. NNOOOOOOOOOOOO!! Then a little birdie mentioned Time Machine. Well it wasn&#39;t so simple as all that but I managed to get my thoughts back (yay for me! yay for you!) and the whole ordeal made me realize that Time Machine is A GIANT VERSION CONTROL MANAGER!! Yay again! The end.
+&lt;/p&gt;
+</description>
+        <pubDate>Sat, 07 Feb 2015 00:00:00 -0800</pubDate>
+        <link>http://coderica.github.io//blog/2015/02/07/gitting-into-the-groove.html</link>
+        <guid isPermaLink="true">http://coderica.github.io//blog/2015/02/07/gitting-into-the-groove.html</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Beginning Your Career In Code</title>
+        <description>&lt;p&gt;
+In coding, the only thing which holds us back from creating is our own ignorance, so learn as much as you can, most especially regarding efficiency. The goal of every good developer is to remove as much redundancy as possible so that they can focus on producing. Spend a couple of weeks committed to your work flow. Figure out which text editor is best for you (I really using sublime) and then take the time to learn how to customize it with plugins and settings and themes. Read a bajillion &quot;Top 10 tips on //ThingofInterest//&quot;, &quot;How to //DoAThing//&quot; and &quot;Why I switched to //AnotherThing//&quot; articles. AUTOMATE EVERYTHING. Spend some hours browsing &lt;a href=&quot;http://www.skillcrush.com/&quot; rel=&quot;external&quot;&gt;Skillcrush&lt;/a&gt; or some other beautiful webdev blogsite with succinct articles. Open an account with &lt;a href=&quot;http://www.stackoverflow.com/&quot; rel=&quot;external&quot;&gt;Stack Overflow&lt;/a&gt; and &lt;a href=&quot;http://www.github.com/&quot; rel=&quot;external&quot;&gt;Github&lt;/a&gt; and familiarize yourself with online developer etiquette. Get annoyingly good at Git and your CLI (command line interface). Did I just throw a bunch of words at you which you aren&#39;t familiar with? If you learn nothing else from my post, at least take this away: Google is absolutely the &lt;i&gt;&lt;b&gt;MOST&lt;/b&gt;&lt;/i&gt; powerful tool we have access to online. Google is the ultimate enabler, and puts &lt;i&gt;all of the knowledge in the history of the world&lt;/i&gt; in your hands. Don&#39;t waste it.
+&lt;/p&gt;
+&lt;p&gt;
+If you are absolutely at a loss of where to start, I have two suggestions I will point you to, which I personally used to dive in. The first is this &lt;a href=&quot;https://www.udemy.com/complete-web-developer-course&quot; rel=&quot;external&quot;&gt;Udemy&lt;/a&gt; course by Rob Percival. Not only is it structured in such a way that a third grader could follow his tutorials, he covers nearly all of the most popular languages, and is incredibly responsive to his students. It doesn&#39;t hurt that he is a marketing &lt;i&gt;genius&lt;/i&gt; (seriously, take notes) and his book on making money while learning to code is definitely worth the read. It is paid, but look for a promo code online. He almost always has some outlandish discount.
+&lt;/p&gt;
+&lt;p&gt;
+My second suggestion, which is much more radical, would be to consider a developer bootcamp. There are literally hundreds to choose from, catering to all different audiences at all different skill levels with all different price points. You are bound to find something which suits your needs. The big names are &lt;a href=&quot;https://www.hackreactor.com&quot; rel=&quot;external&quot;&gt;Hack Reactor&lt;/a&gt;, &lt;a href=&quot;https://www.appacademy.io&quot; rel=&quot;external&quot;&gt;App Academy&lt;/a&gt;, and of course, the one I chose to attend (which also happens to be the original developer bootcamp) &lt;a href=&quot;https://www.devbootcamp.com&quot; rel=&quot;external&quot;&gt;Dev Bootcamp&lt;/a&gt; (more on why I chose DBC later). I suggest you start &lt;a href=&quot;http://www.skilledup.com/articles/the-ultimate-guide-to-coding-bootcamps-the-exhaustive-list/&quot; rel=&quot;external&quot;&gt;here&lt;/a&gt;, a very long list detailing all of the different available bootcamps, what they each teach and cost.
+&lt;/p&gt;
+&lt;p&gt;
+Below I have detailed a short list of more resources to help inspire your own research.
+&lt;/p&gt;
+&lt;p&gt;
+- This is an amazing &lt;a href=&quot;http://www.whoishostingthis.com/blog/2014/09/04/learn-to-code/&quot; rel=&quot;external&quot;&gt;infographic&lt;/a&gt; detailing each major language, what you can achieve with it, and its relative job market demographics.
+&lt;/p&gt;
+&lt;p&gt;
+- Here is a beautifully written inspirational article about learning to code written by the talented young professional, &lt;a href=&quot;https://medium.com/@cecilycarver/things-i-wish-someone-had-told-me-when-i-was-learning-how-to-code-565fc9dcb329&quot; rel=&quot;external&quot;&gt;Cecily Carver&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+- Last, I love this &lt;a href=&quot;http://www.quora.com/Any-bootcamps-that-give-scholarships-to-women-besides-Dev&quot; rel=&quot;external&quot;&gt;Quora thread&lt;/a&gt; about developer bootcamp scholarships for women (sorry guys).
+&lt;/p&gt;
+&lt;p&gt;
+Before I leave you to your own devices, I offer you an expression which has completely changed my life, spoken by a man who lived by his own advice, &quot;Stay hungry...Stay foolish.&quot;  
+&lt;/p&gt;
+</description>
+        <pubDate>Thu, 05 Feb 2015 00:00:00 -0800</pubDate>
+        <link>http://coderica.github.io//blog/2015/02/05/beginning-your-career-in-code.html</link>
+        <guid isPermaLink="true">http://coderica.github.io//blog/2015/02/05/beginning-your-career-in-code.html</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Joining the Community</title>
+        <description>&lt;p&gt;
+As a newly christened member of the developer community, my first inclination is to insist that what I have to say is not relevant to the coding community. However, after giving this some thought, I realize that this is not only utterly false, but &lt;i&gt;backwards&lt;/i&gt;. Starting from scratch not only means that I have a clean slate for learning, but an unbiased opinion on process, and a thirst for knowledge. By creating the habit of sharing my journey and my findings with others, I am bound to influence the community through a passion for not only good code, but &lt;b&gt;&lt;i&gt;creative code&lt;/i&gt;&lt;/b&gt;. So, in lieu of this understanding, I would like to ask you to do three things...
+&lt;/p&gt;
+&lt;p&gt;
+First, I would encourage you not to take my word for anything. Research, as I have already discovered, is a developer&#39;s best friend. There are so many people in this community who want to share their knowledge, and if you aren&#39;t exploiting this amazing opportunity to &lt;i&gt;learn more&lt;/i&gt;, you aren&#39;t doing it right.
+&lt;/p&gt;
+&lt;p&gt;
+Second, whatever it is, enjoy it! I have been stuck doing something I don&#39;t love, and it is a complete was of time, energy, and ethos. Movement is life, and if you aren&#39;t moving forwards, you are stagnant... like the Nile, which harbors all sorts nasty. You get it. No? Look it up. So to end, I leave you with this poem, a glance into the flow of a passionate developer...
+&lt;/p&gt;
+&lt;p&gt;
+Pour up (code), head shot (code)&lt;br /&gt;
+Sit down (code), stand up (code)&lt;br /&gt;
+Pass out (code), wake up (code)&lt;br /&gt;
+Faded (code), faded (code)
+&lt;/p&gt;
+</description>
+        <pubDate>Thu, 15 Jan 2015 00:00:00 -0800</pubDate>
+        <link>http://coderica.github.io//blog/2015/01/15/joining-the-community.html</link>
+        <guid isPermaLink="true">http://coderica.github.io//blog/2015/01/15/joining-the-community.html</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+    
+  </channel>
+</rss>
