@@ -138,6 +138,10 @@ footer a:hover{
     display: block;
 }
 
+.back {
+    vertical-align: top;
+    display: inline-block;
+}
 .caption {
     width: 100%;
     background-color: black;
