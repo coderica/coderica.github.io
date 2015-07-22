@@ -5,7 +5,6 @@ date: 2015-02-18
 categories: blog
 excerpt: "Did you ever find yourself suited up to jump in the pool, excitement pushing you to the edge, when all the sudden excitement turns to dread as your big toe hits the cold water and you are filled with regret. 'This was a terrible idea,' you think."
 ---
-
 <p>
 Did you ever find yourself suited up to jump in the pool, excitement pushing you to the edge, when all the sudden excitement turns to dread as your big toe hits the cold water and you are filled with regret. "This was a terrible idea," you think.
 </p><p>

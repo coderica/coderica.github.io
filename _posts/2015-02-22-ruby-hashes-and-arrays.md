@@ -5,7 +5,6 @@ date: 2015-02-22
 categories: blog
 excerpt: "Ruby gives us two ways to deal with organizing data structures; arrays and hashes. Both are very similar and easily confused. What you can do with arrays, you can also often do with hashes, and visa versa. They share many of the same methods, and are even born in the same fashion..."
 ---
-
 <p>
 Ruby gives us two ways to deal with organizing data structures; arrays and hashes. Both are very similar and easily confused. What you can do with arrays, you can also often do with hashes, and visa versa. They share many of the same methods, and are even born in the same fashion...
 </p><p>

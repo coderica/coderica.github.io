@@ -5,7 +5,6 @@ date: 2015-02-07
 categories: blog
 excerpt: "Memorizing commands is a huge part of learning to code. It helps that, for the most part, the language is very logical. Github and git and terminal and the general language of developing is incredibly intuitive."
 ---
-
 <p>
 I do <i>NOT</i> do rote memorization well. I used to cram little jingles in my head for each word and then forget them immediately after hyperventilating through a painfully long test. I thought I'd never have to memorize vocabulary again when I finished grammar in high school. WELL I THOUGHT WRONG. Memorizing commands is a huge part of learning to code. It helps that, for the most part, the language is very logical. Github and git and terminal and the general language of developing is incredibly intuitive. This was all created by people who wanted to make the process of creation <i>as simple as possible</i>. It's quite beautiful, really.
 </p><p>

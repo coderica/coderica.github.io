@@ -8,6 +8,7 @@ layout: default
   	{{ page.date | date: "%b %-d, %Y" }}
   </p><hr></aside>
 
-  <article><p>{{ content }}</p></article>
+  <article><p>{{ content | remove: '<p>'}}</p></article>
   
+  <a href="{{site.url}}{{site.baseurl}}blog">back</a>
 </section>

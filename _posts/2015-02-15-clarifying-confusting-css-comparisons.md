@@ -5,7 +5,6 @@ date: 2015-02-15
 categories: blog
 excerpt: "When you first begin working with CSS, many people suggest getting the code to function is more important than HOW you get it function. To some degree, I can see how this would serve as a sort of confidence boost to encourage you to keep working with plans of going back later to revise old code. The problem is you probably never will."
 ---
-
 <p>
 When you first begin working with CSS, many people suggest getting the code to function is more important than HOW you get it function. To some degree, I can see how this would serve as a sort of confidence boost to encourage you to keep working with plans of going back later to revise old code. The problem is you probably never will. You might say "Well that's just negative, Erica". Actually, quite the opposite sparky, this is assuming that the more you learn, the more work you will find, which won't leave much time to go back and fix old projects once you know better. Because of this, I tend to avoid that line of thinking. If you want to learn how to do something, learn it right the <i>first time</i> so you can form good habits from the get go. This can be a bit overwhelming because there are a lot of opinions out there about what "good code" is, but there are some basics you should learn that will open you up to the option of delving into the subject more deeply on your own time. Thus, I have provided below some short discussions on some very common choices you will encounter, and when each option is appropriate.
 </p><p>

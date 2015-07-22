@@ -5,7 +5,6 @@ date: 2015-02-12
 categories: blog
 excerpt: "As you get into developing, especially at the start, you will begin to realize that you cannot entirely avoid working with design. Even if you aspire to be entirely back end, you will have to work with a designer to accomplish a task. The more you understand this aspect of your project, the more clear your objectives will be, especially within your code."
 ---
-
 <p>
 As you get into developing, especially at the start, you will begin to realize that you cannot entirely avoid working with design. Even if you aspire to be entirely back end, you will have to work with a designer to accomplish a task. The more you understand this aspect of your project, the more clear your objectives will be, especially within your code. Regardless, as beginner developers, we won't have the luxury of hiring designer to help us show of our skills as web architects. Most of our work will be displayed in small scale personal or freelance projects. Like it or not, the aesthetic of your projects will effect the impression they make, regardless of how pretty the code is. Because of this, I have created a list of 11 basic design rules to help even the most design-blind programmers enhance the look of their sites. Obviously, rules can be broken, but that is best saved for a time when you understand why that rule exists in the first place. So let's get started!
 </p><p>
