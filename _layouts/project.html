@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<section>
+  <h3>{{page.project}}</h3>
+
+  <aside>
+    <hr><p>
+    {{page.technologies}}
+    </p>
+
+    <hr><p>
+      <a href="{{page.github}}">Github Repository</a>
+    </p><hr>
+
+    {% if page.website %}
+      <p>
+        <a href="{{page.website}}">Google Playstore</a>
+      </p><hr>
+    {% endif %}
+  </aside>
+
+  <article>
+    {{content}}
+  </article>
+
+  <a class="back" href="{{ site.url }}portfolio"><i class="fa fa-chevron-circle-left fa-3x"></i></a>
+</section>

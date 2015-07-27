@@ -2,8 +2,7 @@
 title: Coderica
 email: esm1018@gmail.com
 description: Erica SM Prenga - Personal blog and portfolio.
-baseurl: "/"
-url: "http://coderica.github.io"
+url: "http://127.0.0.1:4000/"
 username: coderica
 google_plus_username: EricaMarroquinPrenga
 

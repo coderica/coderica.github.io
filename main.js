@@ -20,16 +20,16 @@ $(document).ready(function() {
       }
   });
 
-  var imageHeight, wrapperHeight, overlap, container = $('.mask');
-  var image = container.find('img')  
+  // var imageHeight, wrapperHeight, overlap, container = $('.mask');
+  // var image = container.find('img')  
    
-  function centerImage() {
-      wrapperHeight = container.height();
-      overlap = (wrapperHeight - image.height()) / 2;
-      image.css('margin-top', overlap);
-  }
+  // function centerImage() {
+  //     wrapperHeight = container.height();
+  //     overlap = (wrapperHeight - image.height()) / 2;
+  //     image.css('margin-top', overlap);
+  // }
        
-  $(window).on("load resize", centerImage);
+  // $(window).on("load resize", centerImage);
    
   // var el = document.getElementById('mask');
   // if (el.addEventListener) {  
