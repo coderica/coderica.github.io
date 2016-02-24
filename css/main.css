@@ -97,6 +97,7 @@ section {
     width: 60%;
     margin-bottom: 1em;
     margin-left: 15.7%;
+    position: relative;
 }
 aside {
     vertical-align: top;
@@ -162,6 +163,8 @@ footer a:hover{
 }
 .back {
     position: fixed;
+    left: 50px;
+    top: 50px;
 }
 .caption {
     width: 100%;
