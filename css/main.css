@@ -88,6 +88,16 @@ nav a:hover, nav a:active{
 }
 
 /* body */
+#prof-pic {
+    width: 160px;
+    display: inline-block;
+    clip-path: circle(80px at center);
+    float: left;
+}
+#right-main {
+    display: inline-block;
+    float: right;
+}
 main {
     width: 100%;
     margin-top: 6.5em;

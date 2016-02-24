@@ -3,8 +3,9 @@ code
 	-figure out how to link posts in from separate files instead of directly into code
 				http://www.broken-links.com/2013/04/10/the-template-element/
 	-searchable posts
-	-reroute index to /about
 	-refactor css & optimize for mobile
+	-fix nav menu rearranging bug
+	-fix nav transition bug
 
 Posts
 	-why dbc, code school comparison
