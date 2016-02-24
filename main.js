@@ -13,7 +13,7 @@ $(document).ready(function() {
           $('#nav_bar').removeAttr('style');
       }
 
-      if ($(document).height() < $(window).height()) {
+      if ($('html').height() < $(window).height()) {
         alert("Hello! I am an alert box!!");
         $(footer).css({position: 'absolute'});
       }
