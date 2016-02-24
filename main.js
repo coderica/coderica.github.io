@@ -13,7 +13,7 @@ $(document).ready(function() {
           $('#nav_bar').removeAttr('style');
       }
 
-      if ($(document).height() <= $(window).height()) {
+      if ($(document).height() < $(window).height()) {
         $(footer).css({position: 'absolute'});
       }
   });
