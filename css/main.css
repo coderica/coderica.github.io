@@ -27,12 +27,11 @@ header {
 }
 #nav_bar {
     width: 15em;
-    /*margin: 0 auto;*/
+    margin: auto;
     background-color: black;
     color: white;
     padding: .5em;
     z-index: 100;
-    left: calc(50% - 7.5em);
     -webkit-transition-duration: .25s; /* Safari */
     transition-duration: .25s;
 }
