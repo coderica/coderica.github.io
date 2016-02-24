@@ -116,8 +116,7 @@ footer a:hover{
     display: block;
 }
 .back {
-    vertical-align: top;
-    display: inline-block;
+    position: fixed;
 }
 .caption {
     width: 100%;

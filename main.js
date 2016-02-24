@@ -12,6 +12,8 @@ $(document).ready(function() {
       } else {
           $('#nav_bar').removeAttr('style');
       }
+
+      
   });
 
   // var imageHeight, wrapperHeight, overlap, container = $('.mask');
