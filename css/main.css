@@ -127,6 +127,7 @@ article img {
 }
 article p {
     font-size: 21px;
+    margin-top: 3px;
     line-height: 28px;
     font-family: serif;
     text-align: left;
