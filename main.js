@@ -3,6 +3,7 @@ $(document).ready(function() {
   var navTop = $('#nav_bar').offset().top;
 
   if ($('html').height() < $(window).height()) {
+    alert('this is stupid');
     $('footer').css({position: 'absolute'});
   }
 
