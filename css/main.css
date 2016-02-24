@@ -5,7 +5,6 @@ body {
 }
 .wrapper {
     margin-bottom: 1.5em;
-    vertical-align: top;
 }
 a {
     font-style: inherit;
@@ -68,6 +67,7 @@ header {
 }
 #right_head {
     display: inline-block;
+    vertical-align: top;
 }
 #nav_bar {
     width: 15em;
