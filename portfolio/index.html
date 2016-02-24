@@ -3,8 +3,40 @@ layout: default
 title: portfolio
 ---
 
-<!-- create template for projects -->
-<!-- add design work to projects -->
+{% for project in site.projects %}
+  <section>
+    <h3>{{page.project}}</h3>
+
+    <aside>
+      <hr>
+        <p>{{page.technologies}}</p>
+      <hr>
+        <p><a href="{{page.github}}">Github Repository</a></p>
+      <hr>
+
+      {% if page.website %}
+        <p>
+          <a href="{{page.website}}">{{page.website-name}}</a>
+        </p>
+        <hr>
+      {% endif %}
+
+      <a class="back" href="{{ site.url }}portfolio">
+        <i class="fa fa-chevron-circle-left fa-3x"></i>
+      </a>
+    </aside>
+
+    <article>
+      <div class="mask">
+        <a href="{{ page.path }}"><img src="{{ site.url }}images/{{ page.name }}.png" /></a>
+      </div>
+      <div class="caption">
+        <p>{{ page.description }}</p>
+      </div>
+    </article>
+
+  </section>
+{% endfor %}
 
 <!--   <section>
     <h3>
@@ -32,7 +64,7 @@ title: portfolio
   </section> -->
 
 
-  <section>
+<!--   <section>
     <h3>
       <a href="{{ page.url | replace:'index.html','' }}halle.html">Halle: Park it forward</a>
     </h3>
@@ -106,4 +138,4 @@ title: portfolio
     		<p>A productivity Chrome extension for time tracking && mapping.</p>
     	</div>
     </article>
-  </section>
+  </section> -->
