@@ -5,6 +5,7 @@ body {
 }
 .wrapper {
     margin-bottom: 1.5em;
+    vertical-align: top;
 }
 a {
     font-style: inherit;
@@ -28,6 +29,7 @@ h1 {
     font-family: serif; 
     font-weight: 1000; 
     font-size: 100px;
+    margin-top: 70px;
     margin-bottom: 10px;
     line-height: 70px;
 }
