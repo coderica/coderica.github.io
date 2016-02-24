@@ -35,7 +35,7 @@ header {
     -webkit-transition-duration: .25s; /* Safari */
     transition-duration: .25s;
 }
-nav a:hover {
+nav a:hover, nav a:active{
     color: #E21371;
 }
 .page-link {
@@ -75,6 +75,9 @@ aside p {
 article {
     width: 70%;
     display: inline-block;
+}
+article a {
+    color: #E21371;
 }
 article img {
     width: 100%;
