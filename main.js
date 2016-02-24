@@ -1,10 +1,9 @@
 $(document).ready(function() {
 
   var navTop = $('#nav_bar').offset().top;
-  
+
   if ($('html').height() < $(window).height()) {
-    alert("Hello! I am an alert box!!");
-    $(footer).css({position: 'absolute'});
+    $('footer').css({position: 'absolute'});
   }
 
   $(window).scroll(function () {
