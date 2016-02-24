@@ -5,18 +5,18 @@ title: portfolio
 
 {% for project in site.projects %}
   <section>
-    <h3>{{page.project}}</h3>
+    <h3>{{project.project}}</h3>
 
     <aside>
       <hr>
-        <p>{{page.technologies}}</p>
+        <p>{{project.technologies}}</p>
       <hr>
-        <p><a href="{{page.github}}">Github Repository</a></p>
+        <p><a href="{{project.github}}">Github Repository</a></p>
       <hr>
 
-      {% if page.website %}
+      {% if project.website %}
         <p>
-          <a href="{{page.website}}">{{page.website-name}}</a>
+          <a href="{{project.website}}">{{project.website-name}}</a>
         </p>
         <hr>
       {% endif %}
@@ -28,10 +28,10 @@ title: portfolio
 
     <article>
       <div class="mask">
-        <a href="{{ page.path }}"><img src="{{ site.url }}images/{{ page.name }}.png" /></a>
+        <a href="{{ page.path }}"><img src="{{ site.url }}images/{{ project.name }}.png" /></a>
       </div>
       <div class="caption">
-        <p>{{ page.description }}</p>
+        <p>{{ project.description }}</p>
       </div>
     </article>
 
