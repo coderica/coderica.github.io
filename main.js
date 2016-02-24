@@ -1,6 +1,11 @@
 $(document).ready(function() {
 
   var navTop = $('#nav_bar').offset().top;
+  
+  if ($('html').height() < $(window).height()) {
+    alert("Hello! I am an alert box!!");
+    $(footer).css({position: 'absolute'});
+  }
 
   $(window).scroll(function () {
       if ($(window).scrollTop() > navTop) {
@@ -11,11 +16,6 @@ $(document).ready(function() {
           });
       } else {
           $('#nav_bar').removeAttr('style');
-      }
-
-      if ($('html').height() < $(window).height()) {
-        alert("Hello! I am an alert box!!");
-        $(footer).css({position: 'absolute'});
       }
   });
 
