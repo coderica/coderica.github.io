@@ -91,11 +91,8 @@ footer {
     width: 100%;
     text-align: center;
     bottom: 0%;
+    position: absolute;
     vertical-align: center;
-}
-.footer-wrapper {
-    margin: 0 auto;
-    height: 1.5em;
     background-color: black;
     color: white;
     padding: 1em;

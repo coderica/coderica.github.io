@@ -9,10 +9,8 @@ $(document).ready(function() {
               top: '0px',
               width: '100%'
           });
-          // $('#unsticky').css('margin-top', $('#nav_bar').outerHeight(true) + parseInt($('#unstickyheader').css('marginBottom')));
       } else {
           $('#nav_bar').removeAttr('style');
-          // $('#unsticky').css('margin-top', '0px');
       }
   });
 
