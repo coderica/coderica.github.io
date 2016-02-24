@@ -27,13 +27,14 @@ header {
 }
 #nav_bar {
     width: 15em;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     background-color: black;
     color: white;
     padding: .5em;
     z-index: 100;
-    -webkit-transition-duration: .5s; /* Safari */
-    transition-duration: .5s;
+    left: calc(50% - 7.5em);
+    -webkit-transition-duration: .25s; /* Safari */
+    transition-duration: .25s;
 }
 nav a:hover {
     color: #E21371;
