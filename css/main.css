@@ -32,6 +32,8 @@ header {
     color: white;
     padding: .5em;
     z-index: 100;
+    -webkit-transition-duration: .5s; /* Safari */
+    transition-duration: .5s;
 }
 nav a:hover {
     color: #E21371;
