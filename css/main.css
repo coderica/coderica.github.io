@@ -162,7 +162,10 @@ footer a:hover{
     display: block;
 }
 .back {
+    width: 13%;
     position: fixed;
+    margin-top: 10px;
+    text-align: right;
 }
 .caption {
     width: 100%;
