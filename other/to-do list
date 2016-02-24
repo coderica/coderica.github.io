@@ -2,12 +2,9 @@ code
 	-add and format an opaque title for each post
 	-figure out how to link posts in from separate files instead of directly into code
 				http://www.broken-links.com/2013/04/10/the-template-element/
-	-make icons opaque on hover
-				http://fortawesome.github.io/Font-Awesome/icons/
-	-searchable blogs
-	-add portfolio, resume, about me, and home page
-	-remove blog from index
-	-format links
+	-searchable posts
+	-reroute index to /about
+	-refactor css & optimize for mobile
 
 Posts
 	-why dbc, code school comparison
@@ -26,3 +23,13 @@ Posts
 	-things i wish i had known before applying to dbc
 	-why I quit school
 	-being cultured
+	-switching text editors
+	-working for a big company
+	-getting my dream job first
+	-feminism
+	-the continuation of learning
+	-continuing your github profile after getting a job
+	-the comfort of being cornered(aunt deb)
+	-how noise-canceling headphones changed my life
+	-apartment hunting for idiots
+	-6 months after (setting new goals after bootcamp)

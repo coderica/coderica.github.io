@@ -8,3 +8,4 @@ google_plus_username: EricaMarroquinPrenga
 
 # Build settings
 markdown: kramdown
+redirects: yes
