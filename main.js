@@ -1,22 +1,18 @@
 $(document).ready(function() {
 
-  var stickyHeaderTop = $('#nav_bar').offset().top;
+  var navTop = $('#nav_bar').offset().top;
 
   $(window).scroll(function () {
-      if ($(window).scrollTop() > stickyHeaderTop) {
+      if ($(window).scrollTop() > navTop) {
           $('#nav_bar').css({
               position: 'fixed',
               top: '0px',
               width: '100%'
           });
-          $('#unsticky').css('margin-top', $('#nav_bar').outerHeight(true) + parseInt($('#unstickyheader').css('marginBottom')));
+          // $('#unsticky').css('margin-top', $('#nav_bar').outerHeight(true) + parseInt($('#unstickyheader').css('marginBottom')));
       } else {
-          $('#nav_bar').css({
-              top: '0px',
-              position: 'static',
-              width:''
-          });
-          $('#unsticky').css('margin-top', '0px');
+          $('#nav_bar').removeAttr('style');
+          // $('#unsticky').css('margin-top', '0px');
       }
   });
 
