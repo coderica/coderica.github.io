@@ -4,6 +4,8 @@ title: blog
 ---
 
 {% for post in site.posts %}
+{% if post.categories contains 'blog' %}
+
   <section>
     <h3>
       <a href="{{ post.url | prepend: site.url }}">{{ post.title }}</a>
@@ -18,4 +20,6 @@ title: blog
     <p>{{ post.excerpt }}</p>
     </article>
   </section>
+
+{% endif %}
 {% endfor %}

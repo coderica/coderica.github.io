@@ -3,139 +3,39 @@ layout: default
 title: portfolio
 ---
 
-{% for project in site.projects %}
+{% for post in site.posts %}
+{% if post.categories contains 'portfolio' %}
+
   <section>
-    <h3>{{project.project}}</h3>
+    <h3>
+      <a href="{{ page.url | replace:'index.html','' }}{{ post.name }}.html">{{post.project}}</a>
+    </h3>
 
     <aside>
       <hr>
-        <p>{{project.technologies}}</p>
+        <p>{{post.technologies}}</p>
       <hr>
-        <p><a href="{{project.github}}">Github Repository</a></p>
+        <p><a href="{{post.github}}">Github Repository</a></p>
       <hr>
 
-      {% if project.website %}
+      {% if post.website %}
         <p>
-          <a href="{{project.website}}">{{project.website-name}}</a>
+          <a href="{{post.website}}">{{post.website-name}}</a>
         </p>
         <hr>
       {% endif %}
-
-      <a class="back" href="{{ site.url }}portfolio">
-        <i class="fa fa-chevron-circle-left fa-3x"></i>
-      </a>
     </aside>
 
     <article>
       <div class="mask">
-        <a href="{{ page.path }}"><img src="{{ site.url }}images/{{ project.name }}.png" /></a>
+        <a href="{{ page.path }}"><img src="{{ site.url }}images/{{ post.name }}.png" /></a>
       </div>
       <div class="caption">
-        <p>{{ project.description }}</p>
+        <p>{{ post.description }}</p>
       </div>
     </article>
 
   </section>
+
+{% endif %}
 {% endfor %}
-
-<!--   <section>
-    <h3>
-      <a href="https://github.com/coderica/sourcery">Open Sourcery</a>
-    </h3>
-
-    <aside>
-      <hr><p>
-      	Node.js, React.js, Github API, Materialize, ES6 / HTML5 / CSS3
-      </p><hr><p>
-        <a href="https://github.com/coderica/sourcery">Github Repository</a>
-      </p><hr>
-    </aside>
-
-    <article>
-
-    	<div class="mask">
-    		<img src="http://cdn.shopify.com/s/files/1/0746/6359/products/whitesilversparkle_large.jpg?v=1421629176" />
-    	</div>
-
-    	<div class="caption"><p>
-    		A decoupled web portal for finding open source projects.
-    	</p></div>
-    </article>
-  </section> -->
-
-
-<!--   <section>
-    <h3>
-      <a href="{{ page.url | replace:'index.html','' }}halle.html">Halle: Park it forward</a>
-    </h3>
-
-    <aside>
-      <hr><p>
-    	Rails API, PhoneGap Build, Google Maps API, JQuery Mobile, Firebase, ES6 / HTML5 / CSS3
-      </p><hr><p>
-        <a href="https://github.com/coderica/halle">Github Repository</a>
-      </p><hr><p>
-        <a href="https://play.google.com/store/apps/details?id=com.halle.parkit&hl=en">Google Playstore</a>
-      </p><hr>
-    </aside>
-
-    <article>
-
-    	<div class="mask">
-    		<a href="{{ page.url | replace:'index.html','' }}halle.html"><img src="{{ site.url }}images/halle.png" /></a>
-    	</div>
-
-    	<div class="caption"><p>
-    		A decoupled mobile app for crowd-sourced parking.
-    	</p></div>
-    </article>
-  </section>
-
-
-  <section>
-    <h3>
-      <a href="{{ page.url | replace:'index.html','' }}photopop.html">PhotoPop!</a>
-    </h3>
-
-    <aside>
-      <hr><p>
-        PhoneGap Build && Plugins, JQuery Mobile, HTML5 Canvas, ES6 / CSS3
-      </p><hr><p>
-        <a href="https://github.com/coderica/photopop">Github Repository</a>
-      </p><hr>
-    </aside>
-
-    <article>
-    	<div class="mask">
-    		<a href="{{ page.url | replace:'index.html','' }}photopop.html"><img src="{{ site.url }}images/photopop.png" /></a>
-    	</div>
-
-    	<div class="caption"><p>
-    		A client-side mobile app for taking / uploading, drawing on and sharing photos.
-  		</p></div>
-  	</article>
-  </section>
-
-
-  <section>
-    <h3>
-    	<a href="{{ page.url | replace:'index.html','' }}timely.html">Timely x2</a>
-    </h3>
-
-    <aside>
-      <hr><p>
-      	ES6 / HTML5 / CSS3
-      </p><hr><p>
-        <a href="https://github.com/coderica/timely">Github Repository</a>
-      </p><hr>
-    </aside>
-
-    <article>
-    	<div class="mask">
-    		<a href="{{ page.url | replace:'index.html','' }}timely.html"><img src="{{ site.url }}images/timely.png" /></a>
-    	</div>
-    	<div class="caption">
-    		<p>A productivity Chrome extension for time tracking && mapping.</p>
-    	</div>
-    </article>
-  </section> -->
