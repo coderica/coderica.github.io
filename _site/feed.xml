@@ -5,8 +5,8 @@
     <description>Erica SM Prenga - Personal blog and portfolio.</description>
     <link>http://coderica.github.io/</link>
     <atom:link href="http://coderica.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 25 Feb 2016 00:24:54 -0800</pubDate>
-    <lastBuildDate>Thu, 25 Feb 2016 00:24:54 -0800</lastBuildDate>
+    <pubDate>Thu, 25 Feb 2016 00:30:31 -0800</pubDate>
+    <lastBuildDate>Thu, 25 Feb 2016 00:30:31 -0800</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
@@ -75,8 +75,8 @@ The above was achieved with nested arrays (arrays within arrays). We can also pu
 &lt;/p&gt;
 </description>
         <pubDate>Sun, 22 Feb 2015 00:00:00 -0800</pubDate>
-        <link>http://coderica.github.io//blog/ruby-hashes-and-arrays</link>
-        <guid isPermaLink="true">http://coderica.github.io//blog/ruby-hashes-and-arrays</guid>
+        <link>http://coderica.github.io//blog/2015/02/22/ruby-hashes-and-arrays.html</link>
+        <guid isPermaLink="true">http://coderica.github.io//blog/2015/02/22/ruby-hashes-and-arrays.html</guid>
         
         
         <category>blog</category>
@@ -117,8 +117,8 @@ My biggest realization since beginning my journey as a web developer has been th
 &lt;/p&gt;
 </description>
         <pubDate>Wed, 18 Feb 2015 00:00:00 -0800</pubDate>
-        <link>http://coderica.github.io//blog/growth-mindset-to-battle-coding-cold-feet</link>
-        <guid isPermaLink="true">http://coderica.github.io//blog/growth-mindset-to-battle-coding-cold-feet</guid>
+        <link>http://coderica.github.io//blog/2015/02/18/growth-mindset-to-battle-coding-cold-feet.html</link>
+        <guid isPermaLink="true">http://coderica.github.io//blog/2015/02/18/growth-mindset-to-battle-coding-cold-feet.html</guid>
         
         
         <category>blog</category>
@@ -144,8 +144,8 @@ When you first begin working with CSS, many people suggest getting the code to f
 &lt;/p&gt;
 </description>
         <pubDate>Sun, 15 Feb 2015 00:00:00 -0800</pubDate>
-        <link>http://coderica.github.io//blog/clarifying-confusting-css-comparisons</link>
-        <guid isPermaLink="true">http://coderica.github.io//blog/clarifying-confusting-css-comparisons</guid>
+        <link>http://coderica.github.io//blog/2015/02/15/clarifying-confusting-css-comparisons.html</link>
+        <guid isPermaLink="true">http://coderica.github.io//blog/2015/02/15/clarifying-confusting-css-comparisons.html</guid>
         
         
         <category>blog</category>
@@ -191,8 +191,8 @@ As you get into developing, especially at the start, you will begin to realize t
 &lt;/p&gt;
 </description>
         <pubDate>Thu, 12 Feb 2015 00:00:00 -0800</pubDate>
-        <link>http://coderica.github.io//blog/tips-for-the-design-ignorant-developer</link>
-        <guid isPermaLink="true">http://coderica.github.io//blog/tips-for-the-design-ignorant-developer</guid>
+        <link>http://coderica.github.io//blog/2015/02/12/tips-for-the-design-ignorant-developer.html</link>
+        <guid isPermaLink="true">http://coderica.github.io//blog/2015/02/12/tips-for-the-design-ignorant-developer.html</guid>
         
         
         <category>blog</category>
@@ -221,8 +221,8 @@ WHERE ARE MY THOUGHTS?! OH GOD, NOT MY THOUGHTS! I&#39;LL &lt;b&gt;&lt;i&gt;NEVE
 &lt;/p&gt;
 </description>
         <pubDate>Sat, 07 Feb 2015 00:00:00 -0800</pubDate>
-        <link>http://coderica.github.io//blog/gitting-into-the-groove</link>
-        <guid isPermaLink="true">http://coderica.github.io//blog/gitting-into-the-groove</guid>
+        <link>http://coderica.github.io//blog/2015/02/07/gitting-into-the-groove.html</link>
+        <guid isPermaLink="true">http://coderica.github.io//blog/2015/02/07/gitting-into-the-groove.html</guid>
         
         
         <category>blog</category>
@@ -257,8 +257,8 @@ Before I leave you to your own devices, I offer you an expression which has comp
 &lt;/p&gt;
 </description>
         <pubDate>Thu, 05 Feb 2015 00:00:00 -0800</pubDate>
-        <link>http://coderica.github.io//blog/beginning-your-career-in-code</link>
-        <guid isPermaLink="true">http://coderica.github.io//blog/beginning-your-career-in-code</guid>
+        <link>http://coderica.github.io//blog/2015/02/05/beginning-your-career-in-code.html</link>
+        <guid isPermaLink="true">http://coderica.github.io//blog/2015/02/05/beginning-your-career-in-code.html</guid>
         
         
         <category>blog</category>
@@ -284,8 +284,8 @@ Faded (code), faded (code)
 &lt;/p&gt;
 </description>
         <pubDate>Thu, 15 Jan 2015 00:00:00 -0800</pubDate>
-        <link>http://coderica.github.io//blog/joining-the-community</link>
-        <guid isPermaLink="true">http://coderica.github.io//blog/joining-the-community</guid>
+        <link>http://coderica.github.io//blog/2015/01/15/joining-the-community.html</link>
+        <guid isPermaLink="true">http://coderica.github.io//blog/2015/01/15/joining-the-community.html</guid>
         
         
         <category>blog</category>
@@ -300,8 +300,8 @@ Faded (code), faded (code)
 &lt;img src=&quot;http://coderica.github.io/images/timely5.png&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 11 Nov 1111 00:00:00 -0800</pubDate>
-        <link>http://coderica.github.io//portfolio/timely</link>
-        <guid isPermaLink="true">http://coderica.github.io//portfolio/timely</guid>
+        <link>http://coderica.github.io//portfolio/1111/11/11/timely.html</link>
+        <guid isPermaLink="true">http://coderica.github.io//portfolio/1111/11/11/timely.html</guid>
         
         
         <category>portfolio</category>
@@ -315,8 +315,8 @@ Faded (code), faded (code)
 &lt;img src=&quot;http://coderica.github.io/images/photopop3.jpg&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 11 Nov 1111 00:00:00 -0800</pubDate>
-        <link>http://coderica.github.io//portfolio/photopop</link>
-        <guid isPermaLink="true">http://coderica.github.io//portfolio/photopop</guid>
+        <link>http://coderica.github.io//portfolio/1111/11/11/photopop.html</link>
+        <guid isPermaLink="true">http://coderica.github.io//portfolio/1111/11/11/photopop.html</guid>
         
         
         <category>portfolio</category>
@@ -329,8 +329,8 @@ Faded (code), faded (code)
 &lt;img src=&quot;http://coderica.github.io/images/halle3.jpg&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 11 Nov 1111 00:00:00 -0800</pubDate>
-        <link>http://coderica.github.io//portfolio/halle</link>
-        <guid isPermaLink="true">http://coderica.github.io//portfolio/halle</guid>
+        <link>http://coderica.github.io//portfolio/1111/11/11/halle.html</link>
+        <guid isPermaLink="true">http://coderica.github.io//portfolio/1111/11/11/halle.html</guid>
         
         
         <category>portfolio</category>

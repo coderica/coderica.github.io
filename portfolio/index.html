@@ -8,7 +8,8 @@ title: portfolio
 
   <section>
     <h3>
-      <a href="{{ post.url | prepend: site.url }}">{{post.project}}</a>
+      <a href="{{ post.url | prepend: site.url | replace:'//','/' }}
+      {{ page.url | replace:'index.html','' }}{{ post.name }}.html">{{post.project}}</a>
     </h3>
 
     <aside>
